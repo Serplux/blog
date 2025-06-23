@@ -1,6 +1,5 @@
 .footer {
-  background-color: $white;
-  padding-inline: 24px;
+  background-color: #111827;
   color: $gray-700;
 
   &.footer-website {
@@ -33,7 +32,7 @@
               color: $gray-700;
 
               &:hover {
-                color: $blue-700;
+                color: #ff622d;
               }
 
               svg {
@@ -132,7 +131,6 @@
 
     .footer-middle {
       &>div {
-        border-top: 1px solid $gray-200;
         width: 100%;
         max-width: 1200px;
         margin-inline: auto;
@@ -157,7 +155,7 @@
           }
 
           p {
-            color: $gray-700;
+            color: $white;
           }
 
           ul {
@@ -209,7 +207,7 @@
           h3 {
             font-size: 20px;
             font-weight: 700;
-            color: $gray-700;
+            color: #5d5d5e;
             margin-bottom: 16px;
             display: flex;
             align-items: center;
@@ -223,14 +221,14 @@
 
             li {
               a {
-                color: $gray-700;
+                color: white;
                 font-size: 15px;
                 transition: all 0.2s ease-in-out;
                 display: flex;
                 align-items: center;
 
                 &:hover {
-                  color: $blue-700;
+                  color: #ff622d;
                 }
 
                 .new-label {
@@ -299,7 +297,7 @@
 
               &:hover,
               &:focus {
-                color: $blue-700;
+                color: #ff622d;
               }
             }
           }

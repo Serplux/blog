@@ -1,5 +1,5 @@
 .header {
-  background: $white;
+  background: #111827;
   z-index: 2;
   // border-bottom: 1px solid $gray-100;
   position: sticky;
@@ -35,7 +35,7 @@
         }
 
         a:not(.btn) {
-          color: $gray-700;
+          color: $white;
           padding: 0 16px;
           transition: all 0.2s ease-in-out;
           font-weight: 500;
@@ -44,7 +44,7 @@
 
             &:hover,
             &:focus {
-              color: $blue-700;
+              color: #ff622d;
             }
           }
         }

@@ -28,13 +28,13 @@ paginate = 9
 
 
 [params]
-  linkedin = "https://www.linkedin.com/company/onranko"
-  github = "https://github.com/onranko"
+  linkedin = "https://www.linkedin.com/company/serplux/"
+  github = "https://github.com/serplux"
   ogimage = "https://onranko.com/images/hero-og.png"
   tagline = "World's #1 AI Agents for Instant Marketing Solutions"
   blogtitle = "Serplux"
   description = "Discover Serplux, the world's #1 AI-powered marketing assistant. Instantly tackle any marketing task without the need for endless searches, blogs, or prompts. Let our AI agents handle everything in seconds—efficient, fast, and beyond ChatGPT."
-  twitter = "@on_ranko"
+  twitter = "@SerpluxAI"
 
   [markup.goldmark.renderer]
   unsafe = true

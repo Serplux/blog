@@ -33,13 +33,9 @@
   }
 
   &.btn-primary {
-    background-color: #3044c5;
+    background-color: #ff622d;
     color: white;
-
-
-    &:hover {
-      background-color: #3154b4;
-    }
+    border: 1px solid white;
   }
 
   &.btn-outline {
