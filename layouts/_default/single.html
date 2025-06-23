@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="blog-page">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {{ partial "gtag" .}}
+  {{ partial "meta_blog" .}}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href='{{ "/favicon.png" | relLangURL }}' />
+  <link rel="icon" type="image/png" href='{{ "/favicon.png" | relLangURL }}' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' />
+</head>
+
+
+<body>
+
+  {{ partial "custom-js" . }}
+  <!--main section-->
+  <div class="main main-detail" id="main">
+    <!--header section-->
+    {{ partial "header" (dict "Kind" .Kind "Template" "List") }}
+    <!--header section-->
+    <!-- Left sidebar -->
+    <!--content section-->
+    <main onclick="removeClass()" class="content detail-page-v1">
+      <section class="hero py-96 description">
+        <div>
+          <div class="hero-wrap">
+            <div class="flex flex-col  middle text detail-page-header">
+              <h1 class="title">
+                {{.Title}}
+              </h1>
+              <p class="mb-0">
+                {{.Params.description}}
+              </p>
+              {{ $.Scratch.Set "dateType" .Date }}
+              {{ if .Params.date }}
+                  {{ $.Scratch.Set "dateType" .Params.date }}
+              {{ end }}
+
+              <div class="bio">
+                <div>
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize (index .Params "author")))
+                  }}
+                  <div class="auther-detail">
+                    <div class="img">
+                      <img src="{{ .Params.photo }}" alt="{{ .Params.name }}" />
+                    </div>
+                    <div class="date">
+
+                      
+                      <span>{{ .Params.name }}</span>
+                      <p>{{ ($.Scratch.Get "dateType").Format "Monday, Jan 2, 2006" }}</p>
+
+                    </div>
+                    <a href="{{ .Permalink }}"></a>
+                  </div>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="has-space content-wrapper description bg-gray">
+        <div>
+          <div class="content-wrap">
+            <div class="middle text">
+              {{.Content}}
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!--CTA section-->
+
+
+    </main>
+    <!--content section-->
+    {{ partial "footer" . }}
+
+  </div>
+  <!--main section-->
+  <script>
+    document.getElementsByClassName('top-banner')[0].style.display = 'none';
+
+  </script>
+</body>
+
+</html>

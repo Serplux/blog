@@ -1,0 +1,185 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFJSWD8M" height="0" width="0"
+    style="display: none; visibility: hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    if (
+      "IntersectionObserver" in window &&
+      "IntersectionObserverEntry" in window &&
+      "intersectionRatio" in window.IntersectionObserverEntry.prototype
+    ) {
+      let lazyImageObserver = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.srcset = lazyImage.srcset;
+            lazyImage.classList.remove("lazy");
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+
+      lazyImages.forEach(function (lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    }
+  });
+</script>
+
+
+<script>
+  const parseParams = (querystring) => {
+    // parse query string
+    const params = new URLSearchParams(querystring);
+
+    const obj = {};
+
+    // iterate over all keys
+    for (const key of params.keys()) {
+      if (params.getAll(key).length > 1) {
+        obj[key] = params.getAll(key);
+      } else {
+        obj[key] = params.get(key);
+      }
+    }
+
+    return obj;
+  };
+  // console.log(window.location.search)
+  // const params = new Proxy( new URLSearchParams( window.location.search ),{
+  //     get: ( searchParams,prop ) => searchParams.get( prop ),
+  //   } );
+  const params = parseParams(window.location.search);
+  function setCookie(params, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie =
+      "params=" + JSON.stringify(params) + ";" + expires + ";path=/";
+  }
+  // console.log(params)
+  if (Object.keys(params).length) setCookie(params, 30);
+</script>
+
+
+
+<script>
+  jQuery(document).ready(function () {
+    jQuery("#testimonial").slippry({
+      // general elements & wrapper
+      slippryWrapper: '<div class="sy-box testimonial" />', // wrapper to wrap everything, including pager
+      elements: "article", // elments cointaining slide content
+
+      // options
+      adaptiveHeight: false, // height of the sliders adapts to current
+      captions: false,
+
+      // pager
+      pagerClass: "testimonial-pager",
+
+      controls: false,
+      // transitions
+      transition: "horizontal", // fade, horizontal, kenburns, false
+      speed: 1200,
+      pause: 4000,
+
+      // slideshow
+      autoDirection: "next",
+    });
+  });
+</script>
+
+<script>
+  jQuery(document).ready(function () {
+    jQuery("#testimonial-2").slippry({
+      // general elements & wrapper
+      slippryWrapper: '<div class="sy-box testimonial" />', // wrapper to wrap everything, including pager
+      elements: "article", // elments cointaining slide content
+
+      // options
+      adaptiveHeight: false, // height of the sliders adapts to current
+      captions: false,
+
+      // pager
+      pagerClass: "testimonial-pager",
+
+      controls: false,
+      // transitions
+      transition: "horizontal", // fade, horizontal, kenburns, false
+      speed: 1200,
+      pause: 4000,
+
+      // slideshow
+      autoDirection: "next",
+    });
+  });
+</script>
+
+<script>
+  const copyCode = (id) => {
+    navigator.clipboard.writeText(document.getElementById(id).innerText);
+    console.log();
+    document.getElementById(`${id}-copy`).classList.add("clicked");
+    document.getElementById(`${id}-copy`).children[1].innerText = "Copied!";
+    document.getElementById(`${id}-copy`).children;
+    setTimeout(() => {
+      document.getElementById(`${id}-copy`).classList.remove("clicked");
+      document.getElementById(`${id}-copy`).children[1].innerText = "";
+    }, 3000);
+  };
+</script>
+<script type="text/javascript">
+  function load_iframes() {
+    var vidDefer = document.getElementById("demo-iframe");
+    if (vidDefer.getAttribute("data-src")) {
+      vidDefer.setAttribute("src", vidDefer.getAttribute("data-src"));
+    }
+  }
+  document.addEventListener("DOMContentLoaded", function (event) {
+    load_iframes();
+  });
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let innerTextContainer = document.getElementById("inner-text-container")
+    let innerTexts = document.querySelectorAll(".innerText");
+    if (innerTexts) {
+      innerTexts.forEach((innerText) => {
+        /* make clone of first child start*/
+        let firstText = innerText.firstElementChild.cloneNode("true");
+        innerText.appendChild(firstText);
+        /* make clone of first child end*/
+        let i = 0,
+          speed = 2000,
+          distance = 72;
+
+        setInterval(() => {
+          let step = innerText.childElementCount;
+          innerText.style.transform = `translateY(-${distance * i}px)`;
+          innerText.style.transition = "0.7s ease-in-out";
+          if (i < step) {
+            innerTextContainer.style.width = `${innerTextContainer.children[i].getBoundingClientRect().width}px`
+          }
+          if (i == step) {
+            innerText.style.transition = "0s";
+            innerText.style.transform = `translateY(0px)`;
+
+          }
+
+          // now change the value of i
+          i = i < step ? i + 1 : 1;
+        }, speed);
+      });
+    }
+  });
+</script>

@@ -1,0 +1,165 @@
+.grid-50 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  &>div {
+    width: calc((100% - 24px) / 2);
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
+
+.grid-33 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.grid-33 {
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  &>div {
+    width: calc((100% - 48px) / 3);
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
+
+.grid-25 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.grid-25 {
+  &>div {
+    width: calc((100% - 72px) / 4);
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
+
+.grid-20 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.grid-20 {
+  &>div {
+    width: calc((100% - 96px) / 5);
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
+
+.grid-40-60 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  &>div {
+    &:first-child {
+      width: calc(40% - 12px);
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      width: calc(60% - 12px);
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.grid-60-40 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  &>div {
+    &:first-child {
+      width: calc(60% - 12px);
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      width: calc(40% - 12px);
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.grid-30-70 {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  &>div {
+    &:first-child {
+      width: calc(30% - 12px);
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      width: calc(70% - 12px);
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}

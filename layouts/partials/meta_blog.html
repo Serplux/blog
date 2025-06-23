@@ -1,0 +1,57 @@
+<!--  Title Tags -->
+{{ if eq .Kind "home"}}
+<title itemprop="name">{{ .Site.Params.tagline }} | {{ .Site.Params.blogtitle }}</title>
+<meta property="og:title" content="{{ .Site.Params.tagline }} | {{ .Site.Params.blogtitle }}" />
+<meta name="twitter:title" content="{{ .Site.Params.tagline }} | {{ .Site.Params.blogtitle }}" />
+<meta itemprop="name" content="{{ .Site.Params.tagline }} | {{ .Site.Params.blogtitle }}" />
+<meta name="application-name" content="{{ .Site.Params.tagline }} | {{ .Site.Params.blogtitle }}" />
+<meta property="og:site_name" content="{{ .Site.Params.tagline }} | {{ .Site.Params.blogtitle }}" />
+{{ else }}
+<title itemprop="name">{{ .Page.Title }} | {{ .Site.Params.blogtitle }}</title>
+<meta property="og:title" content="{{ .Page.Title }} | {{ .Site.Params.blogtitle }}" />
+<meta name="twitter:title" content="{{ .Page.Title }} | {{ .Site.Params.blogtitle }}" />
+<meta itemprop="name" content="{{ .Page.Title }} | {{ .Site.Params.blogtitle }}" />
+<meta name="application-name" content="{{ .Page.Title }} | {{ .Site.Params.blogtitle }}" />
+<meta property="og:site_name" content="{{ .Page.Title }} | {{ .Site.Params.blogtitle }}" />
+<meta name="author" content="{{ .Page.Params.author }}">
+{{ end }}
+
+
+<meta property="og:type" content="website">
+
+
+{{ if eq .Kind "home"}}
+<!--  Description Tags -->
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta itemprop="description" content="{{ .Site.Params.description }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<meta name="twitter:description" content="{{ .Site.Params.description }}" />
+{{ else }}
+<!--  Description Tags -->
+<meta name="description" content="{{ .Params.description }}" />
+<meta itemprop="description" content="{{ .Params.description }}" />
+<meta property="og:description" content="{{ .Params.description }}" />
+<meta name="twitter:description" content="{{ .Params.description }}" />
+{{ end }}
+
+<!--  Link Tags -->
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" /> 
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!--  Image Tags -->
+{{ if eq .Kind "home"}}
+<meta itemprop="image" content='{{ .Site.Params.ogimage | absURL }}' />
+<meta itemprop="image" content='{{ .Site.Params.ogimage | absURL }}' />
+<meta property="og:image" content='{{ .Site.Params.ogimage | absURL }}' />
+<meta name="twitter:image" content='{{ .Site.Params.ogimage | absURL }}' />
+<meta name="twitter:image:src" content='{{ .Site.Params.ogimage | absURL }}' /> 
+{{ else }}
+<meta itemprop="image" content='{{ .Permalink | absURL  }}{{.Params.coverimage}}' />
+<meta itemprop="image" content='{{ .Permalink | absURL  }}{{.Params.coverimage}}' />
+<meta property="og:image" content='{{ .Permalink | absURL  }}{{.Params.coverimage}}' />
+<meta name="twitter:image" content='{{ .Permalink | absURL  }}{{.Params.coverimage}}' />
+<meta name="twitter:image:src" content='{{ .Permalink | absURL  }}{{.Params.coverimage}}' /> 
+{{ end }}

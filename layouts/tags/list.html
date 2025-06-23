@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="blog-page">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {{ partial "gtag" .}}
+  {{ partial "meta_tag" .}}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href='{{ "/" | relLangURL  }}favicon.ico' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' />
+</head>
+
+<body>
+  {{ partial "custom-js" . }}
+  <!--main section-->
+  <div class="main" id="main">
+    <!--header section-->
+    {{ partial "header" (dict "Kind" .Kind "Template" "List") }}
+    <!--header section-->
+    <!--content section-->
+    <main class="content">
+      <!--hero pinned section-->
+      <section class="hero pinned-item py-96">
+        <div>
+          <div class="text">
+            <h1 class="title">Found {{ len .Pages }} posts with tag "{{ .Data.Term | upper }}"</h1>
+          </div>
+        </div>
+      </section>
+      <!--hero pinned section-->
+      <!--blog listing-->
+      <section class="blog-listing bg-gray mb-72">
+        <div class="grid-33">
+          {{ range .Pages }}
+          <div class="card-new rounded shadow padding flex flex-col">
+            <div class="image">
+              <img src='{{ .Permalink | relLangURL  }}{{.Params.coverimage}}' loading="lazy" alt="{{.Title}}" />
+            </div>
+            <div class="description">
+              <div>
+                <div class="blog-tag">
+                  {{range (index .Params "blog/tags")}}<a href='{{ "/blog/tags/" | relLangURL }}{{ . | urlize }}'>{{ .
+                    }}</a> {{end}}
+                </div>
+                <h2 class="title">
+                  {{.Title}}
+                </h2>
+              </div>
+              <p>
+                {{.Params.description}}
+              </p>
+
+
+            </div>
+            <div class="bio"> <a href='{{ "author/" | relLangURL  }}{{ (index .Params "author") | urlize }}'>{{ (index
+                .Params "author") }}</a> - {{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+            <a href="{{.Permalink}}"></a>
+            <!--blog link add here-->
+          </div>
+          {{ end }}
+        </div>
+      </section>
+      <!--blog listing-->
+    </main>
+    <!--content section-->
+    {{ partial "footer" . }}
+  </div>
+  <!--main section-->
+</body>
+
+</html>

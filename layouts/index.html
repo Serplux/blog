@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="blog-page">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {{ partial "gtag" .}}
+  {{ partial "meta_blog" .}}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href='{{ "/favicon.png" | relLangURL }}' />
+  <link rel="icon" type="image/png" href='{{ "/favicon.png" | relLangURL }}' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' />
+
+</head>
+
+<body>
+  {{ partial "custom-js" . }}
+  <!--main section-->
+  <div class="main" id="main">
+    {{ partial "header" (dict "Kind" .Kind "Template" "List") }}
+    <!--content section-->
+    <main onclick="removeClass()" class="content">
+
+
+      <!--hero pinned section-->
+      {{ $firstPost := index .Pages 0 }}
+      {{ with $firstPost }}
+      {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
+      <section class="hero pinned-item py-96">
+        <div class="grid-50 ">
+          <div class="hero-image border-radius-md">
+            <a href="{{ .Permalink }}">
+              {{ if $coverImage }}
+              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}" />
+              {{ else }}
+              <div class="placeholder-image">No Image</div>
+              {{ end }}
+            </a>
+          </div>
+          <div class="text flex flex-col">
+            <div>
+              <div class="blog-tag">
+                {{ range .Params.tags }}
+                <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}/'>{{ . }}</a>
+                {{ end }}
+              </div>
+              <h1 class="title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              </h1>
+            </div>
+            <p>{{ .Params.description }}</p>
+            <div class="bio">
+              <a href='{{ "/author/" | relLangURL }}{{ .Params.author | urlize }}'>{{ .Params.author }}</a>
+              - {{ .Date.Format "Monday, Jan 2, 2006" }}
+            </div>
+          </div>
+        </div>
+      </section>
+      {{ end }}
+      <!--hero pinned section-->
+      <!--blog listing-->
+      <section class="blog-listing bg-gray">
+        <div class="grid-33">
+          {{ $paginator := .Paginate (after 1 .Pages) }}
+          {{ if $paginator.Pages }}
+          {{ range $paginator.Pages }}
+          {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
+          <div class="card-new rounded shadow padding flex flex-col">
+            <div class="image">
+
+              {{ if $coverImage }}
+              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}" />
+              {{ else }}
+              <div class="placeholder-image">No Image</div>
+              {{ end }}
+            </div>
+            <div class="description">
+              <div>
+                <div class="blog-tag">
+                  {{ range .Params.tags }}
+                  <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}/'>{{ . }}</a>
+                  {{ end }}
+                </div>
+                <h2 class="title">{{ .Title }}</h2>
+              </div>
+              <p>{{ .Params.description | default .Summary }}</p>
+
+            </div>
+            <div class="bio">
+              {{ with .Params.author }}
+              <a href='{{ "/author/" | relLangURL }}{{ . | urlize }}/'>{{ . }}</a>
+              {{ end }}
+              {{ if .Date }}
+              - {{ .Date.Format "Monday, Jan 2, 2006" }}
+              {{ end }}
+            </div>
+            <a href="{{ .Permalink }}"></a>
+          </div>
+          {{ end }}
+          {{ else }}
+          <p>No additional blog posts found.</p>
+          {{ end }}
+        </div>
+      </section>
+      <!--blog listing-->
+
+      {{ if gt $paginator.TotalPages 1 }}
+      {{ partial "pagination" . }}
+      {{ end }}
+
+
+    </main>
+    {{ partial "footer" . }}
+
+  </div>
+  <!--main section-->
+</body>
+
+</html>

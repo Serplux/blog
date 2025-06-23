@@ -1,0 +1,42 @@
+baseURL = "https://blog.serplux.com/"
+languageCode = "en-us"
+title = "Serplux"
+
+# Enable for syntax highlighting
+pygmentsClass = true
+pygmentsCodefences = true
+pygmentsStyle = "friendly"
+
+paginate = 9
+
+[taxonomies]
+  author = "author"
+  tag = "tags"
+  
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.7
+
+[outputs]
+  page = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML","RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+
+[params]
+  linkedin = "https://www.linkedin.com/company/onranko"
+  github = "https://github.com/onranko"
+  ogimage = "https://onranko.com/images/hero-og.png"
+  tagline = "World's #1 AI Agents for Instant Marketing Solutions"
+  blogtitle = "Serplux"
+  description = "Discover Serplux, the world's #1 AI-powered marketing assistant. Instantly tackle any marketing task without the need for endless searches, blogs, or prompts. Let our AI agents handle everything in seconds—efficient, fast, and beyond ChatGPT."
+  twitter = "@on_ranko"
+
+  [markup.goldmark.renderer]
+  unsafe = true
+
+enableRobotsTXT = true

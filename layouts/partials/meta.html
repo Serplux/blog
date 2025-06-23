@@ -1,0 +1,48 @@
+<meta charset="utf-8" />
+<link rel="icon" href="/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="theme-color" content="#000000" />
+<meta name="description"
+  content="{{ .Params.description }}" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="OnRanko" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Params.title }} | OnRanko" />
+<meta property="og:description"
+  content="{{ .Params.description }}" />
+<meta property="og:image" content="https://onranko.com/images/hero-og.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@on_ranko" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="twitter:title" content="{{ .Params.title }} | OnRanko" />
+<meta name="twitter:description"
+  content="{{ .Params.description }}" />
+<meta name="twitter:image" content="https://onranko.com/images/hero-og.png" />
+
+<title>{{ .Params.title }} | OnRanko</title>
+<link rel="canonical" href="{{ .Permalink }}" />
+
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "World's #1 AI Agents for Instant Marketing Solutions | OnRanko",
+    "url": "https://onranko.com/",
+    "description": "",
+    "logo": "https://onranko.com/assets/images/logo-dark.png",
+    "sameAs": [
+      "https://x.com/on_ranko",
+      "https://www.linkedin.com/company/onranko"
+    ]
+  }
+</script>
+
+
+{{ end }}

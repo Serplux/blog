@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="landing-page">
+
+<head>
+
+  {{ partial "gtag" . }}
+  {{ partial "meta" .}}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' />
+  <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}slippry.css' />
+  <script src='{{ "/assets/js/" | relLangURL  }}jquery.min.js'></script>
+  <script src='{{ "/assets/js/" | relLangURL  }}custom.js'></script>
+  <script src='{{ "/assets/js/" | relLangURL  }}slippry.min.js'></script>
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+</head>
+
+<body>
+  <div id="'root">
+    <div id="main">
+      <div class="main">
+
+        <section class="page_404">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 ">
+                <div class="col-sm-10 col-sm-offset-1  text-center">
+                  <div class="four_zero_four_bg">
+                    <h1 class="text-center ">404</h1>
+
+
+                  </div>
+
+                  <div class="contant_box_404">
+                    <h3 class="h2">
+                      Look like you're lost
+                    </h3>
+
+                    <p>The page you are looking for not available!</p>
+
+                    <a href="/" class="link_404">Go to Home</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
