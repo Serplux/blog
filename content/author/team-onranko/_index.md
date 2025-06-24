@@ -1,6 +1,6 @@
 ---
 name: Team Serplux
-photo: 'https://media.licdn.com/dms/image/v2/D560BAQHjKtv8ns1yeg/company-logo_200_200/B56ZYQDQ1KHQAI-/0/1744026013471/onranko_logo?e=1752105600&v=beta&t=NCwWF2x3V_TdRfkTf08HoUk0buXnSzkBEeRVi3B8hWw'
+photo: 'https://media.licdn.com/dms/image/v2/D560BAQH_PswJceVF3A/company-logo_200_200/B56ZeWAQ.BHQAI-/0/1750568342201/serplux_logo?e=1756339200&v=beta&t=xCCgxQteChs1oz2nR-yHW_831f3ICw-DBRWAh_P9Glg'
 linkedin: "https://www.linkedin.com/company/serplux/"
 email: support@serplux.com
 type: "author"
