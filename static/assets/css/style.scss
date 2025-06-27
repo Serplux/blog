@@ -1947,7 +1947,9 @@ section {
     border-collapse: collapse;
 
     thead {
-      color: $white;
+      background-color: #212a3e;
+      border: 1px solid #0d121e;
+      
 
       th {
         font-weight: 600;
@@ -2314,7 +2316,6 @@ section {
     box-shadow: rgba(9, 30, 66, .25) 0px 4px 8px -2px, rgba(9, 30, 66, .08) 0px 0px 0px 1px;
     border-radius: 12px;
     padding: 16px 12px; /* Reduced padding for mobile */
-    background-color: #fff;
     width: 100%;
     text-align: left;
     border: 0;
@@ -2338,7 +2339,6 @@ section {
   .has-space table th {
     position: sticky;
     top: 0;
-    background-color: #fff;
     z-index: 1;
   }
   
