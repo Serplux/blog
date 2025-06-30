@@ -1,5 +1,5 @@
 ---
-title: "Future Proof Your Marketing in 2025 with AI SEO Agents | Serplux"
+title: "Future Proof Your Marketing in 2025 with AI SEO Agents"
 date: 2025-06-28T13:17:43+05:30
 coverImage: "cover-1.webp"
 author: "Vaibhav Maheshwari"
