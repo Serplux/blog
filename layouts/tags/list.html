@@ -44,7 +44,7 @@
             <div class="description">
               <div>
                 <div class="blog-tag">
-                  {{range (index .Params "blog/tags")}}<a href='{{ "/blog/tags/" | relLangURL }}{{ . | urlize }}'>{{ .
+                  {{range (index .Params "blog/tags")}}<a href='{{ "/blog/tags/" | relLangURL }}{{ . | urlize }}/'>{{ .
                     }}</a> {{end}}
                 </div>
                 <h2 class="title">
