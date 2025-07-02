@@ -56,7 +56,7 @@
             </div>
             <p>{{ .Params.description }}</p>
             <div class="bio">
-              <a href='{{ "/author/" | relLangURL }}{{ .Params.author | urlize }}'>{{ .Params.author }}</a>
+              <a href='{{ "/author/" | relLangURL }}{{ .Params.author | urlize }}/'>{{ .Params.author }}</a>
               - {{ .Date.Format "Monday, Jan 2, 2006" }}
             </div>
           </div>
