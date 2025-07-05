@@ -329,7 +329,7 @@ In a world where search engine changes are unpredictable and constant, this agil
 
 ### **9\. Affordable for Startups, Powerful for Agencies**
 
-One of the best things about [**AI agents**](https://serplux.com/agents/) is scalability without complexity. Whether you’re a solo founder or an enterprise agency, Serplux grows with you.
+One of the best things about [**AI agents**](https://serplux.com/premium/agent) is scalability without complexity. Whether you’re a solo founder or an enterprise agency, Serplux grows with you.
 
 Startups use it to:
 
