@@ -277,7 +277,7 @@ For example:
 
 - A health influencer may get tweet thread prompts with medical disclaimers
 
-The point is [**Serplux**](https://serplux.com/agents/) doesn’t give you generic advice. Its agents adapt to your domain, audience, and goals like an in-house strategist, minus the overhead.
+The point is [**Serplux**](https://serplux.com/premium/agent) doesn’t give you generic advice. Its agents adapt to your domain, audience, and goals like an in-house strategist, minus the overhead.
 
 This level of intelligent personalization, done automatically, is what separates Serplux from every other AI tool.
 
@@ -329,7 +329,7 @@ In a world where search engine changes are unpredictable and constant, this agil
 
 ### **9\. Affordable for Startups, Powerful for Agencies**
 
-One of the best things about [**AI agents**](https://serplux.com/agents/) is scalability without complexity. Whether you’re a solo founder or an enterprise agency, Serplux grows with you.
+One of the best things about [**AI agents**](https://serplux.com/premium/agent) is scalability without complexity. Whether you’re a solo founder or an enterprise agency, Serplux grows with you.
 
 Startups use it to:
 
