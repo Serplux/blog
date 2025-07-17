@@ -2,7 +2,7 @@
 title: "Dark Funnel SEO: Capture 73% of Hidden B2B Traffic in 2025"
 date: 2025-06-26T01:33:58+05:30
 coverImage: "cover-1.webp"
-author: "Mitali Sharma"
+author: "Priya Mathur"
 tags: ["Article", "Dark Funnel SEO", "Dark Social" ]
 description: "Discover how to leverage untracked traffic and dark social for SEO growth. Master dark funnel strategies, AI-powered discovery, and attribution optimization for 2025."
 ---

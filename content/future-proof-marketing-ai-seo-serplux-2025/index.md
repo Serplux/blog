@@ -2,7 +2,7 @@
 title: "Future Proof Your Marketing in 2025 with AI SEO Agents"
 date: 2025-06-28T13:17:43+05:30
 coverImage: "cover-1.webp"
-author: "Vaibhav Maheshwari"
+author: "Ravi Sharma"
 tags: ["Article", "Serplux", "SEO 2025"]
 description: "Discover why traditional SEO fails in 2025, how AI agents solve modern marketing challenges, and how Serplux helps you future-proof search, UX, and growth."
 ---

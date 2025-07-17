@@ -2,7 +2,7 @@
 title: "Multimodal SEO 2025: Text, Voice, Image & Video Tactics"
 date: 2025-07-12T01:33:58+05:30
 coverImage: "cover.jpeg"
-author: "Mitali Sharma"
+author: "Priya Mathur"
 tags: ["Article", "boost rankings", "voice search" ]
 description: "Learn top multimodal SEO strategies for 2025. Boost rankings across voice, image, video, and text search with AI-driven tips and optimization hacks."
 ---

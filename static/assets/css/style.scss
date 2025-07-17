@@ -9,12 +9,6 @@
 
 section {
 
-  padding-block: 96px;
-
-  @media (max-width: 768px) {
-    padding-block: 36px;
-  }
-
   &.no-padding {
     padding-block: 0;
   }
@@ -1970,6 +1964,9 @@ section {
       }
 
     }
+  }
+  table:last-child {
+    margin-bottom: 0;
   }
 
   h1 {

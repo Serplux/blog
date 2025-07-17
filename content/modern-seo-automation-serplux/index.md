@@ -2,7 +2,7 @@
 title: "Modern SEO Made Simple: Automate Everything with Serplux"
 date: 2025-07-03T13:17:43+05:30
 coverImage: "cover-1.webp"
-author: "Vaibhav Maheshwari"
+author: "Ravi Sharma"
 tags: ["Article", "Serplux", "SEO 2025"]
 description: "Streamline technical SEO, content creation, UX, and SERP monitoring using Serplux agents. Automate growth and stay ahead in 2025's search landscape."
 ---

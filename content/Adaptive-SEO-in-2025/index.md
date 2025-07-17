@@ -2,7 +2,7 @@
 title: "Adaptive SEO 2025: AI-Driven Strategies for Top Rankings"
 date: 2025-06-23T01:33:58+05:30
 coverImage: "cover-1.webp"
-author: "Mitali Sharma"
+author: "Priya Mathur"
 tags: ["Article", "Adaptive SEO 2025", "E-E-A-T"]
 description: "Master Adaptive SEO in 2025 with AI agility and human insight. Boost rankings via real-time adjustments, predictive clustering, and E-E-A-T alignment. Essential guide for SEO pros."
 ---
