@@ -3553,3 +3553,28 @@ section {
   background-color: #e0e0e0; /* Slightly darker grey on hover */
   transform: scale(1.1); /* Enlarge button on hover */
 }
+
+.toc {
+  font-weight: 600;
+  @media (max-width: 768px) {
+      margin-top: 24px;
+  }
+}
+
+/* Hide TOC on mobile */
+@media screen and (max-width: 768px) {
+  .toc-mobile-hide {
+    display: none;
+  }
+
+  /* Show share and CTA block at bottom */
+  .share-cta-mobile {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  /* Optional: make the bottom section full width on mobile */
+  .grid-30-70 {
+    display: block;
+  }
+}

@@ -71,15 +71,30 @@
       <section class="has-space content-wrapper description bg-gray">
         <div class="grid-30-70">
           <div>
-            {{ .TableOfContents }}
-            <p> Share this article</p>
-            {{ partial "share-buttons" . }}
+            <p class="toc toc-mobile-hide">Table of Contents</p>
+            <div class="toc-mobile-hide">
+              {{ .TableOfContents }}
+             <hr>
+              <p class="toc"> Share</p>
+              {{ partial "share-buttons" . }}
+
+              <hr>
+              <p class="toc">See the Growth for Yourself!</p>
+              <a href="https://serplux.com/auth" class="btn btn-primary">Get Started Free</a>
+            </div>
+            
           </div>
           
           <div>
             <div class="content-wrap">
               <div class="middle text">
                 {{.Content}}
+
+                <div class="share-cta-mobile">
+                  <hr>
+                  <p class="toc">Share</p>
+                  {{ partial "share-buttons" . }}
+                </div>
 
               </div>
 
