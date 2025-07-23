@@ -69,7 +69,11 @@
         </div>
       </section>
       <section class="has-space content-wrapper description bg-gray">
-        <div>
+        <div class="grid-30-70">
+          <div>
+            {{ .TableOfContents }}
+          </div>
+          <div>
           <div class="content-wrap">
             <div class="middle text">
               {{.Content}}
@@ -78,6 +82,8 @@
 
           </div>
         </div>
+        </div>
+        
       </section>
       <!--CTA section-->
 

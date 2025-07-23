@@ -3500,3 +3500,19 @@ section {
   }
   
 }
+
+#TableOfContents ul li {
+    list-style-type: none; /* Removes the default disc bullet */
+    margin-left: 0; /* Optional: Resets any default indentation */
+    padding-left: 0; /* Optional: Resets any default padding */
+}
+
+#TableOfContents ul li a {
+    color: #9ca3af; /* A darker, more visible gray shade */
+    text-decoration: none; /* Optional: Removes the underline from links */
+    font-size: 0.938rem;
+}
+
+#TableOfContents ul li a:hover {
+    color: #ff622d; /* Standard orange color */
+}

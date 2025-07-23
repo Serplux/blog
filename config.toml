@@ -39,4 +39,10 @@ paginate = 9
   [markup.goldmark.renderer]
   unsafe = true
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
 enableRobotsTXT = true

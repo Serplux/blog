@@ -1,6 +1,6 @@
 ---
 name: Priya Mathur
-photo: '/author/sophie-carter/sophie-carter.jpg'
+photo: '/author/priya-mathur/priya-mathur.png'
 type: "author"
 ---
 
