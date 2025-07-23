@@ -45,4 +45,8 @@ paginate = 9
     ordered = false
     startLevel = 2
 
+[params.shareButtons]
+  size = "small"
+  networks = ["facebook", "twitter"]
+
 enableRobotsTXT = true

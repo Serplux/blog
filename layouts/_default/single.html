@@ -72,17 +72,21 @@
         <div class="grid-30-70">
           <div>
             {{ .TableOfContents }}
+            <p> Share this article</p>
+            {{ partial "share-buttons" . }}
           </div>
+          
           <div>
-          <div class="content-wrap">
-            <div class="middle text">
-              {{.Content}}
+            <div class="content-wrap">
+              <div class="middle text">
+                {{.Content}}
+
+              </div>
 
             </div>
-
           </div>
         </div>
-        </div>
+        
         
       </section>
       <!--CTA section-->
