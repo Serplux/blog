@@ -75,7 +75,7 @@
           {{ range $paginator.Pages }}
           {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
           <div class="card-new rounded shadow padding flex flex-col">
-            <div class="image">
+            <div class="image" {{ if $coverImage }}style="aspect-ratio: {{ $coverImage.Width }} / {{ $coverImage.Height }};"{{ end }}>
 
               {{ if $coverImage }}
               <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}"  />
