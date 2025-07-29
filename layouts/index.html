@@ -37,7 +37,7 @@
           <div class="hero-image border-radius-md">
             <a href="{{ .Permalink }}">
               {{ if $coverImage }}
-              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}" />
+              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}"  width="600" height="400" />
               {{ else }}
               <div class="placeholder-image">No Image</div>
               {{ end }}
@@ -75,7 +75,7 @@
             <div class="image">
 
               {{ if $coverImage }}
-              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}" />
+              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}"  />
               {{ else }}
               <div class="placeholder-image">No Image</div>
               {{ end }}
