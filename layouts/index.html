@@ -11,11 +11,14 @@
   <link rel="icon" type="image/svg+xml" href='{{ "/favicon.ico" | relLangURL }}' />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap"></noscript>
+  <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap"></noscript>
 
-
-  <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' />
+  <link rel="preload" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' /></noscript>
 
 </head>
 
