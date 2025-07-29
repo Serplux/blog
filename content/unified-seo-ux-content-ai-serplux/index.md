@@ -1,7 +1,7 @@
 ---
 title: "Unified SEO, UX & Content Strategy with AI"
 date: 2025-07-10T01:33:58+05:30
-coverImage: "cover.png"
+coverImage: "cover.webp"
 author: "Ravi Sharma"
 tags: ["Article", "SEO", "UX", "AI"]
 description: "Explore how Serplux unifies SEO, UX and content using AI agents to deliver seamless, high performing digital experiences built for discovery, engagement and scale."

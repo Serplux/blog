@@ -59,7 +59,7 @@
             </div>
             <div class="bio"> <a href='{{ "author/" | relLangURL  }}{{ (index .Params "author") | urlize }}/'>{{ (index
                 .Params "author") }}</a> - {{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-            <a href="{{.Permalink}}"></a>
+            <a href="{{.Permalink}}" aria-label="Read more about {{ .Title }}"></a>
             <!--blog link add here-->
           </div>
           {{ end }}

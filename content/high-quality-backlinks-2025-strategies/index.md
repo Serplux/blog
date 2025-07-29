@@ -1,7 +1,7 @@
 ---
 title: "Get Top Backlinks in 2025: 7 Proven SEO Strategies & Tools"
 date: 2025-07-23T01:33:58+05:30
-coverImage: "cover.jpg"
+coverImage: "cover.webp"
 author: "Sophie Carter"
 tags: ["Article", "Backlinks", "Link Building Strategy" ]
 description: "Master backlink building with 7 actionable strategies for 2025. From citation magnets to HARO, learn how to secure authoritative links that drive SEO success."
