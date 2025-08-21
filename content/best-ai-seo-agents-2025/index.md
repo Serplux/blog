@@ -1,5 +1,5 @@
 ---
-title: "The 9 Best AI SEO Agents in 2025 | Top Tools"
+title: "The 9 Best AI SEO Agents in 2025 | Top AI Tools"
 date: 2025-08-16T01:33:58+05:30
 coverImage: "best-ai-seo-agent.webp"
 author: "Priya Mathur"
