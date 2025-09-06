@@ -4,7 +4,8 @@
 
 
 .bg-gray {
-  background-color: #111827;
+  background-color: #fff;
+  margin-top: 20px;
 }
 
 section {
@@ -2009,13 +2010,14 @@ section {
   h5 {
     margin-bottom: 16px;
     font-weight: 600;
-    color:$white;
+    color:#111827;
   }
 
   p,
   ul,
   ol {
-    color: $white;
+    color: #374151;
+    font-size: 20px;
   }
 
   p {
