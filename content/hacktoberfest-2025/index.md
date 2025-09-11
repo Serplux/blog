@@ -3,7 +3,7 @@ title: "Hacktoberfest 2025: Contribute to Open Source with Serplux & Win Rewards
 date: 2025-09-11T01:33:58+05:30
 coverImage: "hacktoberfest-2025.webp"
 author: "Sophie Carter"
-tags: ["Article", "Backlinks", "Link Building Strategy" ]
+tags: ["Article", "Hacktoberfest 2025", "Open Source" ]
 description: "Hacktoberfest 2025 is here! Join the Serplux community this October to contribute to open-source projects, improve your coding skills, and earn unique rewards."
 ---
 
