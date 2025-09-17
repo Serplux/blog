@@ -1,5 +1,5 @@
 ---
-title: "Top AI SEO Trends and Strategies for 2025 | Serplux"
+title: "Top AI SEO Trends and Strategies for 2025"
 date: 2025-09-17T01:33:58+05:30
 coverImage: "cover.webp"
 author: "Ravi Sharma"
