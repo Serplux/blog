@@ -47,14 +47,14 @@ section {
 
   .hero-image {
     img {
-      object-fit: cover;
+      object-fit: contain;
 
-      @media(min-width: 768px) {
-        height: 400px;
-      }
+      // @media(min-width: 768px) {
+      //   height: 400px;
+      // }
 
       border-radius: 12px;
-      aspect-ratio: 3/2;
+      // aspect-ratio: 3/2;
       width: 100%;
     }
   }

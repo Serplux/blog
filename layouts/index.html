@@ -40,7 +40,7 @@
           <div class="hero-image border-radius-md">
             <a href="{{ .Permalink }}">
               {{ if $coverImage }}
-              <img src='{{ $coverImage.Permalink }}' fetchpriority="high" alt="{{ .Title }} " width="600" height="400"/>
+              <img src='{{ $coverImage.Permalink }}' fetchpriority="high" alt="{{ .Title }}"/>
               {{ else }}
               <div class="placeholder-image">No Image</div>
               {{ end }}
