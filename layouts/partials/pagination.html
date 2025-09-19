@@ -1,11 +1,13 @@
 {{ $paginator := $.Paginator }}
 {{ if gt $paginator.TotalPages 1 }}
-<section class="py-96">
+<section class="py-96 bg-inherit">
   <div>
     <ul class="pagination">
       <li>
-        <a {{ if $paginator.HasPrev }}href="{{ $paginator.Prev.URL }}" {{ end }}
-          class="prew {{ if not $paginator.HasPrev }} disabled{{ end }}">
+        <!-- <a {{ if $paginator.HasPrev }}href="{{ $paginator.Prev.URL }}" {{ else }} {{ end }} -->
+        <a {{ if $paginator.HasPrev }}href="{{ $paginator.Prev.URL }}" {{ else }}href="" {{ end }}
+          class="{{ if $paginator.HasPrev }}prew enable{{else}}disabled{{ end }}">
+          <!-- class="prew {{ if not $paginator.HasPrev }} disabled{{ end }}"> -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-chevron-left">
@@ -14,14 +16,18 @@
         </a>
       </li>
       {{ range $paginator.Pagers }}
-      <li class="link">
-        <a href="{{ .URL }}" {{ if eq $paginator.PageNumber .PageNumber }}class="active" {{ end }}> {{ .PageNumber
+      <li>
+        <!-- <a href="{{ .URL }}" {{ if eq $paginator.PageNumber .PageNumber }}class="active" {{ end }}> {{ .PageNumber
+          }}</a> -->
+        <a href="{{ .URL }}" class="{{ if eq $paginator.PageNumber .PageNumber }}active{{ else }}prew enable{{ end }}"> {{ .PageNumber
           }}</a>
       </li>
       {{ end }}
       <li>
-        <a {{ if $paginator.HasNext }}href="{{ $paginator.Next.URL }}" {{ end }}
-          class="prew {{ if not $paginator.HasNext }} disabled{{ end }}">
+        <!-- <a {{ if $paginator.HasNext }}href="{{ $paginator.Next.URL }}" {{ end }} -->
+        <a {{ if $paginator.HasNext }}href="{{ $paginator.Next.URL }}"{{ else }}href="" {{ end }}
+          class="{{ if $paginator.HasNext }}prew enable{{else}}disabled{{ end }}">
+          <!-- class="prew {{ if not $paginator.HasNext }} disabled{{ end }}"> -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-chevron-right">

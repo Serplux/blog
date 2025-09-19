@@ -18,7 +18,8 @@
   <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap"></noscript>
 
   <link rel="preload" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' /></noscript>
+  <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' />
+  <!-- <noscript><link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' /></noscript> -->
 
 </head>
 
@@ -40,7 +41,7 @@
           <div class="hero-image border-radius-md">
             <a href="{{ .Permalink }}">
               {{ if $coverImage }}
-              <img src='{{ $coverImage.Permalink }}' fetchpriority="high" alt="{{ .Title }}"/>
+              <img src='{{ $coverImage.Permalink }}' fetchpriority="high" alt="{{ .Title }}" loading="lazy"/>
               {{ else }}
               <div class="placeholder-image">No Image</div>
               {{ end }}
@@ -75,6 +76,7 @@
           {{ range $paginator.Pages }}
           {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
           <div class="card-new rounded shadow padding flex flex-col">
+            <!-- <div class="image" {{ if $coverImage }}style="aspect-ratio: {{ $coverImage.Width }} / {{ $coverImage.Height }};"{{ end }}> -->
             <div class="image" {{ if $coverImage }}style="aspect-ratio: {{ $coverImage.Width }} / {{ $coverImage.Height }};"{{ end }}>
               {{ if $coverImage }}
               <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}"  />

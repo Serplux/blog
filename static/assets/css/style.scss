@@ -395,8 +395,11 @@ section {
 
 .blog-tag {
   margin-bottom: 4px;
-  position: relative;
-  z-index: 2;
+  // position: relative;
+  // z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 
   a {
     color: #ff622d ;
@@ -3212,6 +3215,10 @@ section {
   }
 }
 
+.bg-inherit {
+  background: #111827;
+}
+
 .auther-detail {
   display: flex;
   align-items: center;
@@ -3372,33 +3379,63 @@ section {
         color: $white;
       }
 
-      &:hover {
-        color: $white;
-      }
+      // &:hover {
+      //   color: $white;
+      // }
+
+      // &.prew,
+      // &.next {
+      //   &.enable {
+      //     background: #3044c5;
+
+      //     svg {
+      //       stroke: $white;
+      //     }
+      //   }
+
+      //   &.disabled {
+      //     color: #3044c5;
+      //     background: #f3f4f6;
+
+      //     svg {
+      //       stroke: #3044c5;
+      //     }
+      //   }
+      // }
 
       &.prew,
       &.next {
         &.enable {
-          background: #3044c5;
-
-          svg {
-            stroke: $white;
-          }
-        }
-
-        &.disabled {
-          color: #3044c5;
           background: #f3f4f6;
-
+          color: #3044c5;
           svg {
             stroke: #3044c5;
           }
         }
+
+        &.disabled {
+          // background-color: #ccc;
+          // color: #666;
+          cursor: not-allowed;
+          // opacity: 0.6;
+          color: #8C92AC;
+          pointer-events: none;
+
+          // svg {
+          //   stroke: #666;
+          // }
+        }
       }
 
-      &:hover {
+      // &:hover {
+      &:not(.disabled):hover {
         background: #3044c5;
         border-radius: 4px;
+        color: $white;
+
+        svg {
+            stroke: $white;
+          }
 
         a {
           color: $white;
@@ -3585,4 +3622,12 @@ section {
 
 .py-bottom-96 {
     padding: 0 0 96px 0;
+}
+
+@media screen and (min-width: 900px) {
+  .sticky-toc {
+    position: sticky;
+    top: 4.6rem;
+    padding-bottom: 5.25rem;
+  }
 }
