@@ -62,11 +62,12 @@
   "@context" "https://schema.org"
   "@type" "WebSite"
   "name" .Site.Title
-  "url" .Site.BaseURL
+  "url" (replace .Site.BaseURL "\"" "" ) 
   "description" (default "Discover Serplux, the world's #1 AI-powered marketing assistant. Instantly tackle any marketing task without the need for endless searches, blogs, or prompts. Let our AI agents handle everything in seconds—efficient, fast, and beyond ChatGPT." .Site.Params.description)
   "publisher" (dict
       "@type" "Organization"
       "name" "Serplux"
+      "url" "https://serplux.com/"
       "logo" (dict "@type" "ImageObject" "url" "https://serplux.com/frontend/images/logo.png")
       "sameAs" (slice "https://x.com/SerpluxAI" "https://www.linkedin.com/company/serplux/"))
 -}}
@@ -75,18 +76,25 @@
 {{ else }}
 <!-- ✅ Structured data for Blog Article -->
 <script type="application/ld+json">
+{{- $authorName := cond (isset .Params "author") .Params.author "Serplux" -}}
+{{- $authorURL := cond (isset .Params "author") (print "https://blog.serplux.com/author/" ($authorName | urlize) "/") "https://blog.serplux.com/author/serplux/" -}}
+{{- $imageURL := cond (isset .Params "coverimage") (print .Permalink .Params.coverimage) (print .Permalink "default-feature.png") -}}
+
+
 {{- $data := dict
   "@context" "https://schema.org"
   "@type" "BlogPosting"
   "headline" .Title
   "description" (cond (isset .Params "description") .Params.description (.Summary | plainify))
-  "image" (cond (isset .Params "coverimage") (.Params.coverimage | absURL) ((print .Site.BaseURL "images/default-feature.png")))
+  "image" $imageURL
   "author" (dict
       "@type" "Person"
-      "name" (cond (isset .Params "author") .Params.author "Serplux"))
+      "name" $authorName
+      "url" $authorURL)
   "publisher" (dict
       "@type" "Organization"
       "name" "Serplux"
+      "url" "https://blog.serplux.com/"
       "logo" (dict "@type" "ImageObject" "url" "https://serplux.com/frontend/images/logo.png"))
   "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
   "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
@@ -96,4 +104,5 @@
 -}}
 {{ $data | jsonify | safeJS }}
 </script>
+
 {{ end }}
