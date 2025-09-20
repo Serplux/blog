@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href='{{ "/assets/css/" | relLangURL  }}style.min.css?v=7' />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
 </head>
 
 
@@ -50,7 +50,14 @@
                   }}
                   <div class="auther-detail">
                     <div class="img">
-                      <img src="{{ .Params.photo }}" alt="{{ .Params.name }}" />
+                      <img 
+                      src="{{ .Params.photo }}" 
+                      alt="{{ .Params.name }}" 
+                      height="40px" 
+                      width="40px" 
+                      loading="lazy" 
+                      sizes="(max-width: 768px) 30px, (max-width: 1024px) 35px, 40px"  
+                      />
                     </div>
                     <div class="date">
 
@@ -71,18 +78,20 @@
       <section class="has-space content-wrapper description bg-gray">
         <div class="grid-30-70">
           <div>
-            <p class="toc toc-mobile-hide">Table of Contents</p>
-            <div class="toc-mobile-hide">
-              {{ .TableOfContents }}
-             <hr>
-              <p class="toc"> Share</p>
-              {{ partial "share-buttons" . }}
-
-              <hr>
-              <p class="toc">See the Growth for Yourself!</p>
-              <a href="https://serplux.com/auth" class="btn btn-primary">Get Started Free</a>
+            <div class="sticky-toc">
+              <p class="toc toc-mobile-hide">Table of Contents</p>
+              <div class="toc-mobile-hide">
+                {{ .TableOfContents }}
+               <!-- <hr>
+                <p class="toc"> Share</p>
+                {{ partial "share-buttons" . }} -->
+  
+                <hr>
+                <p class="toc">See the Growth for Yourself!</p>
+                <a href="https://serplux.com/auth" class="btn btn-primary">Get Started Free</a>
+              </div>
+              
             </div>
-            
           </div>
           
           <div>
