@@ -1,5 +1,5 @@
 ---
-title: "Hacktoberfest 2025: Contribute to Open Source with Serplux & Win Rewards"
+title: "Hacktoberfest 2025: Contribute to Open Source with Serplux and Win Exclusive T-Shirts"
 date: 2025-09-11T01:33:58+05:30
 coverImage: "hacktoberfest-2025.webp"
 author: "Sophie Carter"
@@ -7,95 +7,169 @@ tags: ["Article", "Hacktoberfest 2025", "Open Source" ]
 description: "Hacktoberfest 2025 is here! Join the Serplux community this October to contribute to open-source projects, improve your coding skills, and earn unique rewards."
 ---
 
-Hacktoberfest 2025 is here, and Serplux is excited to join this global celebration of open source by empowering developers to contribute, learn, and grow. This October, we are opening our upcoming repositories to contributors from around the world and offering great rewards for meaningful contributions. Whether you’re a first-time contributor or an experienced developer, Hacktoberfest 2025 is your chance to make a difference. Serplux is here to support you every step of the way.
+**Updated on:** 19 September 2025
 
----
+Every October, the global tech community comes together to celebrate Hacktoberfest — a month-long open-source festival that inspires thousands of people to contribute to projects they care about.
 
-## What Is Hacktoberfest 2025?
+Hacktoberfest 2025 is here, and this year, Serplux is joining the celebration — and inviting you to join us too.
 
-[Hacktoberfest 2025](https://hacktoberfest.com/) is an annual month-long [open-source festival hosted by Digital Ocean](https://www.digitalocean.com/open-source/hacktoberfest). It encourages open source communities to contribute to open source projects on GitHub. Every year, thousands of developers worldwide participate by submitting pull requests, fixing bugs, writing content, improving documentation, and creating new features for open source projects.
+Whether you're an experienced developer or someone who’s never contributed to open source before, this is your chance to learn, build, give back, and win exclusive rewards along the way.
 
-It’s an inclusive event that welcomes everyone of all skill levels. It’s the perfect chance to start your open-source journey. By contributing, you gain real-world experience, build your portfolio, and connect with the global open source community.
 
----
+## What Is Hacktoberfest?
 
-## Why Serplux Is Participating in Hacktoberfest 2025
+[Hacktoberfest 2025](https://hacktoberfest.com/) is an annual open-source initiative first launched by DigitalOcean. The idea is simple yet powerful: anyone, anywhere in the world, can participate by contributing to open-source projects throughout the month of October.
 
-At [Serplux](https://serplux.com/), we believe in the power of teamwork and community-driven innovation. Supporting Hacktoberfest 2025 fits our mission to contribute to the open-source ecosystem and give back to the community.
+Here’s what makes it special:
 
-By participating, we aim to:
+- It’s open to everyone — developers, designers, writers, marketers, students, hobbyists, and professionals alike.
 
-* Provide beginner-friendly issues for first-time contributors
-* Foster a welcoming and inclusive developer community
-* Encourage knowledge sharing, mentorship, and collaboration
+- It encourages meaningful contributions that improve real-world projects.
 
-We see Hacktoberfest as more than just contributing. It’s about empowering people and building something meaningful together.
+- It comes with awesome rewards for those who complete the challenge.
 
----
+The goal isn’t just to win swag. It’s to learn, grow your skills, build your GitHub portfolio, and support open-source communities that power the internet.
 
-## How You Can Contribute with Serplux
 
-Starting this October, Serplux will open several GitHub repositories specifically for Hacktoberfest 2025 contributions. While these repositories are still being set up, here’s what you can expect:
+## Why Participate Through Serplux?
 
-### For Developers
+At [Serplux](https://serplux.com/), we believe that open source is for everyone — and Hacktoberfest is the perfect moment to start your journey.
 
-1. **Explore Serplux Repositories**
+We’re opening up our own projects to contributors this October, and offering you a fun, supportive space to learn, collaborate, and get your work noticed.
 
-   * We will publish a list of beginner-friendly and intermediate projects.
+Here’s what makes contributing through Serplux special:
 
-2. **Find an Issue**
+- Hands-on experience with real projects
 
-   * Look for issues labeled `hacktoberfest` and `good first issue`.
+- Build your developer or creative portfolio
 
-3. **Start Contributing**
+- Be part of an active and welcoming community
 
-   * Fork the repository, work on the issue, and submit your pull request.
+- Win an exclusive Serplux Hacktoberfest 2025 T-shirt
 
-4. **Get Reviewed and Merged**
+If you’ve ever thought “I want to contribute to open source but don’t know where to start,” this is it. We’ll guide you through every step.
 
-   * Our team will review your work, provide feedback, and merge your PR once it’s ready.
+## How to Participate (Step-by-Step Guide)
 
-### For Digital Marketers, SEO Experts, and Content Creators
+Getting started is simple. Just follow these steps:
 
-Contributions aren’t limited to code. We welcome participation from digital marketing professionals who want to help grow the visibility and impact of our projects:
+### Step 1 — Register for Hacktoberfest
 
-* Write blog posts, guides, and tutorials about Serplux and its tools
-* Improve our SEO by researching and implementing targeted keywords
-* Design visuals, infographics, or short videos for Serplux
+Visit the [Hacktoberfest official site](https://hacktoberfest.com/) and sign up with your GitHub or GitLab account. This ensures your contributions are tracked.
 
-No matter your experience level, there will be tasks for everyone—from writing blogs to building new features.
+### Step 2 — Choose a Serplux Project
 
----
+We’ll soon open our Serplux open-source repositories for contributions.
+These projects will have issues marked `hacktoberfest` and `good first issue` to help you get started easily.
 
-## Exclusive Reward for First 500 Contributors
+(📌 We’ll update this page with live repository links soon.)
 
-To make Hacktoberfest 2025 even more exciting, Serplux is offering an exclusive reward to the first 500 contributors who successfully get their pull requests merged.
+### Step 3 — Pick an Issue and Start Working
 
-This is our way of saying thank you for your effort and celebrating your achievement as part of the global open-source community.
+Once you find an issue you like:
 
----
+- Fork the repository to your account
 
-## Why Join Hacktoberfest with Serplux?
+- Clone it to your local machine
 
-* Supportive and beginner-friendly environment
-* Recognition for your contributions
-* Real-world experience and portfolio building
-* Exclusive Serplux reward for early contributors
-* Active mentorship and feedback from our team
+- Make your changes (bug fixes, new features, documentation, design, etc.)
 
-We are committed to making your Hacktoberfest experience rewarding, educational, and meaningful.
+- Commit and push your changes
 
----
+### Step 4 — Submit a Pull Request (PR)
 
-## Get Ready to Contribute
+Go back to the original repository and create a Pull Request with your changes.
+Our maintainers will review your PR, suggest any changes if needed, and merge it if it’s accepted.
 
-Hacktoberfest 2025 is the perfect chance to start your open-source journey or improve your existing skills. Register on the official Hacktoberfest website, and watch for Serplux’s public repository announcements.
+### Step 5 — Submit the Contribution Form
 
-Mark your calendars, sharpen your skills, and join us as we build something amazing together.
+After you’ve had at least 2 PRs merged successfully, submit this short form with your PR links and your contact information (email and phone number):
 
-## Let’s Build the Future Together
+👉 [Submit Your Contribution Form]()
 
-We’re excited to see what the community creates this Hacktoberfest. Follow Serplux on social media for updates, repository announcements, and contribution guides.
+This step is important — it ensures we can verify your contributions and contact you if you qualify for rewards.
 
-Let’s make Hacktoberfest 2025 the biggest and most impactful.
+## Rewards and Eligibility
+
+To make your effort worthwhile, we’re giving away exclusive Serplux Hacktoberfest 2025 T-shirts to our top contributors.
+
+Here’s how it works:
+
+- Submit at least 2 valid PRs that get merged during Hacktoberfest 2025
+
+- Be among the first 500 qualified contributors
+
+- We’ll contact you on your provided email/phone after the event to collect your shipping address
+
+So don’t wait — the sooner you start contributing, the better your chances of grabbing your limited-edition T-shirt!
+
+## What You Can Contribute
+You don’t need to be a hardcore developer to participate. Here are some ways anyone can help:
+
+### Developers
+
+- Fix bugs and improve existing features
+
+- Write tests and improve code quality
+
+- Refactor code for performance and security
+
+### Designers & Marketers
+
+- Design UI/UX elements or illustrations
+
+- Create social media banners, logos, or brand visuals
+
+- Improve the presentation of [Serplux's landing pages](https://serplux.com/) or [blog portal](https://blog.serplux.com/).
+
+### Writers & Content Creators
+
+- Write technical documentation or how-to guides
+
+- Create blog posts or tutorials about the projects
+
+- Produce video walkthroughs or infographics
+
+Look for issues labeled `hacktoberfest` or `good first issue` in our repositories once they are public.
+
+## Helpful Resources
+
+Here are a few resources to help you get started quickly:
+
+- [Hacktoberfest Official Site](https://hacktoberfest.com/)
+
+- [GitHub Guide: How to Fork and Create a Pull Request](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
+
+- [Open Source Guide by GitHub](https://opensource.guide/how-to-contribute/)
+
+## Important Dates
+Here’s the timeline for Hacktoberfest 2025:
+
+- Starts: October 1, 2025
+
+- Ends: October 31, 2025
+
+- Submit form by: November 3, 2025
+
+- T-shirt reward notifications: Mid-November 2025
+
+> We’ll also keep updating this blog post with new repositories, issues, and updates throughout October — so bookmark this page and check back often.
+
+## Frequently Asked Questions (FAQ)
+
+Q: How many PRs do I need to qualify?
+You need at least 2 pull requests that get merged in Serplux projects during Hacktoberfest 2025.
+
+Q: Can non-coders participate?
+Absolutely! We welcome contributions from designers, writers, marketers, and content creators.
+
+Q: What counts as a valid contribution?
+Any meaningful contribution — code, design, documentation, or content — that gets merged into our repositories.
+
+Q: How do I claim my reward?
+Once your PRs are merged, submit them via the Contribution Form. If you’re among the first 500 qualified contributors, we’ll contact you via email to collect your shipping details.
+
+Q: Do documentation updates count?
+Yes. Documentation and design improvements are valuable contributions too.
+
 
