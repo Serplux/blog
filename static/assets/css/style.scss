@@ -3624,10 +3624,30 @@ section {
     padding: 0 0 96px 0;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   .sticky-toc {
     position: sticky;
     top: 4.6rem;
     padding-bottom: 5.25rem;
+  }
+
+  .toc-scroll {
+    padding-right: 2px;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px; 
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #2c2c2c; /* Track background */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #9f9f9f;    /* Thumb color */
+      border-radius: 10px; 
+      border: 1.5px solid #2c2c2c;       /* Rounded corners */
+    }
   }
 }
