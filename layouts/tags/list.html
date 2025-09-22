@@ -34,22 +34,26 @@
       </section>
       <!--hero pinned section-->
       <!--blog listing-->
-      <section class="blog-listing bg-gray mb-72">
+      <section class="blog-listing bg-gray mb-72" style="padding-bottom: 5rem;">
         <div class="grid-33">
           {{ range .Pages }}
           <div class="card-new rounded shadow padding flex flex-col">
-            <div class="image">
-              <img src='{{ .Permalink | relLangURL  }}{{.Params.coverimage}}' loading="lazy" alt="{{.Title}}" />
-            </div>
+            <a href="{{.Permalink}}" aria-label="Read more about {{ .Title }}">
+              <div class="image">
+                <img src='{{ .Permalink | relLangURL  }}{{.Params.coverimage}}' loading="lazy" alt="{{.Title}}" />
+              </div>
+            </a>
             <div class="description">
               <div>
                 <div class="blog-tag">
-                  {{range (index .Params "blog/tags")}}<a href='{{ "/blog/tags/" | relLangURL }}{{ . | urlize }}/'>{{ .
+                  {{range (index .Params "tags")}}<a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}/'>{{ .
                     }}</a> {{end}}
                 </div>
+            <a href="{{.Permalink}}" aria-label="Read more about {{ .Title }}">
                 <h2 class="title">
                   {{.Title}}
                 </h2>
+            </a>
               </div>
               <p>
                 {{.Params.description}}
@@ -59,7 +63,6 @@
             </div>
             <div class="bio"> <a href='{{ "author/" | relLangURL  }}{{ (index .Params "author") | urlize }}/'>{{ (index
                 .Params "author") }}</a> - {{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-            <a href="{{.Permalink}}" aria-label="Read more about {{ .Title }}"></a>
             <!--blog link add here-->
           </div>
           {{ end }}

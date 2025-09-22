@@ -77,21 +77,25 @@
           {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
           <div class="card-new rounded shadow padding flex flex-col">
             <!-- <div class="image" {{ if $coverImage }}style="aspect-ratio: {{ $coverImage.Width }} / {{ $coverImage.Height }};"{{ end }}> -->
-            <div class="image" {{ if $coverImage }}style="aspect-ratio: {{ $coverImage.Width }} / {{ $coverImage.Height }};"{{ end }}>
-              {{ if $coverImage }}
-              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}"  />
-              {{ else }}
-              <div class="placeholder-image">No Image</div>
-              {{ end }}
-            </div>
-            <div class="description">
-              <div>
+              <a href="{{ .Permalink }}" aria-label="Read more about {{ .Title }}">
+                <div class="image" {{ if $coverImage }}style="aspect-ratio: {{ $coverImage.Width }} / {{ $coverImage.Height }};"{{ end }}>
+                  {{ if $coverImage }}
+                  <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}"  />
+                  {{ else }}
+                  <div class="placeholder-image">No Image</div>
+                  {{ end }}
+                </div>
+              </a>
+              <div class="description">
+                <div>
                 <div class="blog-tag">
                   {{ range .Params.tags }}
                   <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}/'>{{ . }}</a>
                   {{ end }}
                 </div>
-                <h2 class="title">{{ .Title }}</h2>
+                <a href="{{ .Permalink }}" aria-label="Read more about {{ .Title }}">
+                  <h2 class="title">{{ .Title }}</h2>
+                </a>
               </div>
               <p>{{ .Params.description | default .Summary }}</p>
 
@@ -104,7 +108,6 @@
               - {{ .Date.Format "Monday, Jan 2, 2006" }}
               {{ end }}
             </div>
-            <a href="{{ .Permalink }}" aria-label="Read more about {{ .Title }}"></a>
           </div>
           {{ end }}
           {{ else }}

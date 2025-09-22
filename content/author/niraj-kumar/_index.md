@@ -1,5 +1,5 @@
 ---
 name: Niraj Kumar
-photo: "/author/priya-mathur/niraj-kumar.jpg"
+photo: "/author/niraj-kumar/niraj-kumar.jpg"
 type: "author"
 ---

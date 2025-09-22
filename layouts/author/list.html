@@ -99,23 +99,27 @@
       </section>
       <!--hero pinned section-->
       <!--blog listing-->
-      <section class="blog-listing bg-gray mb-72">
+      <section class="blog-listing bg-gray mb-72" style="padding-bottom: 5rem;">
         <div class="grid-33">
           {{ range .Data.Pages }}
           {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
           <div class="card-new rounded shadow padding flex flex-col">
-            <div class="image">
-              <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{.Title}}" />
-            </div>
+            <a href="{{.Permalink}}">
+              <div class="image">
+                <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{.Title}}" />
+              </div>
+            </a>
             <div class="description">
               <div>
                 <div class="blog-tag">
                   {{range (index .Params "tags")}}<a href='{{ "tags/" | relLangURL }}{{ . | urlize }}/'>{{ . }}</a>
                   {{end}}
                 </div>
-                <h2 class="title">
-                  {{.Title}}
-                </h2>
+                <a href="{{.Permalink}}">
+                  <h2 class="title">
+                    {{.Title}}
+                  </h2>
+                </a>
               </div>
               <p>
                 {{.Params.description}}
@@ -124,7 +128,6 @@
             <div class="bio">By {{(index .Params "author")}} - {{ dateFormat "Monday, Jan 2, 2006" .Date }}
 
             </div>
-            <a href="{{.Permalink}}"></a>
             <!--blog link add here-->
           </div>
           {{ end }}
