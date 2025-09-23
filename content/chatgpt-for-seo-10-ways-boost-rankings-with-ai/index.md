@@ -2,7 +2,7 @@
 title: "ChatGPT for SEO: 10 Ways to Boost Your Rankings with AI"
 date: 2025-09-19T01:33:58+05:30
 coverImage: "cover-1.webp"
-author: "Ravi Sharma"
+author: "Priya Kashyap"
 tags: ["ChatGPT SEO", "AI SEO tools", "AI rank tracker"]
 description: "Discover 10 powerful ways to use ChatGPT for SEO in 2025. From keyword research to SERP analysis and content optimization, learn how AI can supercharge your rankings."
 ---

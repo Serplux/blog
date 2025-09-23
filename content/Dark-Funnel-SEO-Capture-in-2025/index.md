@@ -2,8 +2,8 @@
 title: "Dark Funnel SEO: Capture 73% of Hidden B2B Traffic in 2025"
 date: 2025-06-26T01:33:58+05:30
 coverImage: "cover-1.webp"
-author: "Priya Mathur"
-tags: ["Article", "Dark Funnel SEO", "Dark Social" ]
+author: "Anushka Kumari"
+tags: ["Article", "Dark Funnel SEO", "Dark Social"]
 description: "Discover how to leverage untracked traffic and dark social for SEO growth. Master dark funnel strategies, AI-powered discovery, and attribution optimization for 2025."
 ---
 
@@ -103,12 +103,12 @@ Benefit: First-party data offers **3x accuracy** in attribution compared to what
 
 ### **Proxy Signals for Supervision**
 
-| **Signal Type** | **Measurement Method** | **Dark Funnel Indicator** |
-| --- | --- | --- |
-| Brand Search Spikes | Google Search Console | Increased direct traffic without a clear attribution source |
-| Email Forward Rates | Email marketing platforms | High forwarding suggests dark social sharing |
-| Content Completion Rates | Heatmap tools | Deep engagement without a clear traffic source |
-| Sales Call Quality | CRM data | Prospects arriving highly informed without visible touchpoints |
+| **Signal Type**          | **Measurement Method**    | **Dark Funnel Indicator**                                      |
+| ------------------------ | ------------------------- | -------------------------------------------------------------- |
+| Brand Search Spikes      | Google Search Console     | Increased direct traffic without a clear attribution source    |
+| Email Forward Rates      | Email marketing platforms | High forwarding suggests dark social sharing                   |
+| Content Completion Rates | Heatmap tools             | Deep engagement without a clear traffic source                 |
+| Sales Call Quality       | CRM data                  | Prospects arriving highly informed without visible touchpoints |
 
 ##
 

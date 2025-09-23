@@ -2,7 +2,7 @@
 title: "Top AI SEO Trends and Strategies for 2025"
 date: 2025-09-17T01:33:58+05:30
 coverImage: "cover.webp"
-author: "Ravi Sharma"
+author: "Vaibhav Maheshwari"
 tags: ["AI SEO tools", "AI rank tracker", "AI keyword finder"]
 description: "Discover the biggest AI SEO trends shaping 2025. From AI rank trackers and keyword finders to SERP analysis and content automation, learn strategies to stay ahead."
 ---

@@ -2,8 +2,8 @@
 title: "Hacktoberfest 2025: Contribute to Open Source with Serplux and Win Exclusive T-Shirts"
 date: 2025-09-11T01:33:58+05:30
 coverImage: "hacktoberfest-2025.webp"
-author: "Sophie Carter"
-tags: ["Article", "Hacktoberfest 2025", "Open Source" ]
+author: "Team Serplux"
+tags: ["Article", "Hacktoberfest 2025", "Open Source"]
 description: "Hacktoberfest 2025 is here! Join the Serplux community this October to contribute to open-source projects, improve your coding skills, and earn unique rewards."
 ---
 
@@ -14,7 +14,6 @@ Every October, the global tech community comes together to celebrate Hacktoberfe
 Hacktoberfest 2025 is here, and this year, Serplux is joining the celebration — and inviting you to join us too.
 
 Whether you're an experienced developer or someone who’s never contributed to open source before, this is your chance to learn, build, give back, and win exclusive rewards along the way.
-
 
 ## What Is Hacktoberfest?
 
@@ -29,7 +28,6 @@ Here’s what makes it special:
 - It comes with awesome rewards for those who complete the challenge.
 
 The goal isn’t just to win swag. It’s to learn, grow your skills, build your GitHub portfolio, and support open-source communities that power the internet.
-
 
 ## Why Participate Through Serplux?
 
@@ -104,6 +102,7 @@ Here’s how it works:
 So don’t wait — the sooner you start contributing, the better your chances of grabbing your limited-edition T-shirt!
 
 ## What You Can Contribute
+
 You don’t need to be a hardcore developer to participate. Here are some ways anyone can help:
 
 ### Developers
@@ -143,6 +142,7 @@ Here are a few resources to help you get started quickly:
 - [Open Source Guide by GitHub](https://opensource.guide/how-to-contribute/)
 
 ## Important Dates
+
 Here’s the timeline for Hacktoberfest 2025:
 
 - Starts: October 1, 2025
@@ -171,5 +171,3 @@ Once your PRs are merged, submit them via the Contribution Form. If you’re amo
 
 Q: Do documentation updates count?
 Yes. Documentation and design improvements are valuable contributions too.
-
-
