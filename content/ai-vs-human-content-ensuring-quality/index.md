@@ -2,7 +2,7 @@
 title: "AI vs Human Content: Ensuring Quality in AI-Generated Articles"
 date: 2025-09-22T01:33:58+05:30
 coverImage: "cover-1.webp"
-author: "Niraj Kumar"
+author: "Priya Kashyap"
 tags:
   [
     "AI content",
