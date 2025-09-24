@@ -83,7 +83,7 @@ Our maintainers will review your PR, suggest any changes if needed, and merge it
 
 After you’ve had at least 2 PRs merged successfully, submit this short form with your PR links and your contact information (email and phone number):
 
-👉 [Submit Your Contribution Form]()
+👉 [Submit Your Contribution Form](https://forms.gle/Av7THTUwf7kXNLCj7)
 
 This step is important — it ensures we can verify your contributions and contact you if you qualify for rewards.
 
