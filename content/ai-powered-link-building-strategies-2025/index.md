@@ -66,7 +66,7 @@ Hi {Name},
 Your {article title} cites {old stat/source}. Our 2025 dataset (same metric, larger sample) shows {one-line result}.  
 If useful, I can share the source sheet and a 2-line annotation. Happy to be cited or remain in the background.
 
-- {You}
+{You}
 
 This isn’t “spray and pray.” It’s a tailored footnote the editor can paste in a minute. Use it for journalist outreach, HARO alternatives, and expert quotes. Keep it human, keep it verifiable, and let the asset do the persuasion.
 
