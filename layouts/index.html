@@ -41,7 +41,7 @@
           <div class="hero-image border-radius-md">
             <a href="{{ .Permalink }}">
               {{ if .Params.coverimage }}
-              <!-- <img src='{{ $coverImage.Permalink }}' fetchpriority="high" alt="{{ .Title }}" loading="lazy"/> -->
+              <!-- <img src='{{ $coverImage.Permalink }}' alt="{{ .Title }}" loading="lazy"/> -->
               {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
               {{ if $coverImage }}
               {{ partial "responsive-image.html" (dict "src" $coverImage "alt" .Title "Page" .) }}
