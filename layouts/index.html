@@ -35,13 +35,17 @@
       <!--hero pinned section-->
       {{ $firstPost := index .Pages 0 }}
       {{ with $firstPost }}
-      {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
+      <!-- {{ $coverImage := .Resources.GetMatch .Params.coverimage }} -->
       <section class="hero pinned-item py-96">
         <div class="grid-50 ">
           <div class="hero-image border-radius-md">
             <a href="{{ .Permalink }}">
+              {{ if .Params.coverimage }}
+              <!-- <img src='{{ $coverImage.Permalink }}' fetchpriority="high" alt="{{ .Title }}" loading="lazy"/> -->
+              {{ $coverImage := .Resources.GetMatch .Params.coverimage }}
               {{ if $coverImage }}
-              <img src='{{ $coverImage.Permalink }}' fetchpriority="high" alt="{{ .Title }}" loading="lazy"/>
+              {{ partial "responsive-image.html" (dict "src" $coverImage "alt" .Title "Page" .) }}
+              {{ end }}
               {{ else }}
               <div class="placeholder-image">No Image</div>
               {{ end }}
@@ -80,7 +84,7 @@
               <a href="{{ .Permalink }}" aria-label="Read more about {{ .Title }}">
                 <div class="image" {{ if $coverImage }}style="aspect-ratio: {{ $coverImage.Width }} / {{ $coverImage.Height }};"{{ end }}>
                   {{ if $coverImage }}
-                  <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{ .Title }}"  />
+                  {{ partial "responsive-image.html" (dict "src" $coverImage "alt" .Title "Page" .) }}
                   {{ else }}
                   <div class="placeholder-image">No Image</div>
                   {{ end }}

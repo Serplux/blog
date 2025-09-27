@@ -7,7 +7,7 @@ pygmentsClass = true
 pygmentsCodefences = true
 pygmentsStyle = "friendly"
 
-paginate = 9
+pagination.pagerSize = 9
 
 [taxonomies]
   author = "author"
@@ -23,7 +23,6 @@ paginate = 9
   page = ["HTML"]
   home = ["HTML", "RSS"]
   section = ["HTML","RSS"]
-  taxonomyTerm = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
 
 
