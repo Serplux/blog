@@ -1,16 +1,16 @@
 {{ $img := .Page.Resources.GetMatch .src }}
 {{ if $img }}
-  {{ $small := $img.Resize "300x" }}
-  {{ $medium := $img.Resize "450x" }}
-  {{ $large := $img.Resize "600x" }}
+  {{ $small := $img.Resize "320x" }}
+  {{ $medium := $img.Resize "600x" }}
+  {{ $large := $img.Resize "900x" }}
 
   <figure style="height: 100%; width: 100%;">
     <img
       src="{{ $medium.RelPermalink }}"
       srcset="{{ $small.RelPermalink }} 320w, {{ $medium.RelPermalink }} 600w, {{ $large.RelPermalink }} 1200w"
-      sizes="(max-width: 768px) 300px, (max-width: 1200px) 450px, 600px"
+      sizes="(max-width: 600px) 320px, (max-width: 1200px) 600px, 900px"
       alt="{{ .alt }}"
-      loading="lazy"
+      fetchpriority="high"
       decoding="async"
       style="height: 100%; width: 100%;"
     />
