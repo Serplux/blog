@@ -27,7 +27,7 @@ We welcome both **developers** and **non-developers**.
     - Add references to sources.  
     - Provide **better quality, research, or more details** than the original.  
   - Must add these at top in .md file:
-    ```bash
+    - ```bash
     ---
   title: "Title"
   date: Date
