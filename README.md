@@ -1,7 +1,7 @@
 # 📰 Hugo Blog – Hacktoberfest 2025
 
 Welcome to the **Hugo Blog Repository**!  
-This project is built with [Hugo v1.112+extended](https://gohugo.io/) and open for contributions as part of **Hacktoberfest 2025** 🎉.
+This project is built with [Hugo v1.112+extended](https://github.com/gohugoio/hugo/releases) and open for contributions as part of **Hacktoberfest 2025** 🎉.
 
 We welcome contributions from **developers** (UI/UX, SEO, site improvements) and **non-developers** (content writers).
 
