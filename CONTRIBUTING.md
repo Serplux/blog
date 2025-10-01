@@ -10,7 +10,7 @@ We welcome both **developers** and **non-developers**.
 ## 📝 For Content Writers (Non-Developers)
 
 - **Where to write:** Only in the `content/` folder.
-- **Folder Naming:** Your `/index.md` folder will be the blog URL.  
+- **Folder Naming:** Your `/my-first-blog/` folder will be the blog URL.  
   Example: `content/my-first-post/index.md` → `https://site.com/my-first-post/`
 
 - **Cover Image (Mandatory):**
