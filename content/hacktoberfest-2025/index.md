@@ -60,7 +60,8 @@ Visit the [Hacktoberfest official site](https://hacktoberfest.com/) and sign up 
 We’ll soon open our Serplux open-source repositories for contributions.
 These projects will have issues marked `hacktoberfest` and `good first issue` to help you get started easily.
 
-(📌 We’ll update this page with live repository links soon.)
+<!-- (📌 We’ll update this page with live repository links soon.) -->
+[Repository](https://github.com/Serplux/blog)
 
 ### Step 3 — Pick an Issue and Start Working
 
