@@ -6,8 +6,7 @@ author: "Priya Kashyap"
 tags:
   [
     "AI content",
-    "AI-generated articles",
-    "E-E-A-T",
+    "AI-generated articles, E-E-A-T",
     "AI detection tools",
     "SERP analysis",
   ]
@@ -24,7 +23,7 @@ Your reader wants a promise kept: tell me something I can use today and say it l
 
 When you understand the feeling you must create, the next question becomes practical - where does that feeling get produced?
 
-## Where Is Content Quality Really Made Before Writing?
+## Where Quality Is Really Made: Before The First Paragraph
 
 Most “bad” AI content isn’t bad because a model wrote it; it’s bad because the brief had no spine. If you only feed a topic and a keyword, you invite wallpaper. Instead, the input should read like a reported memo: who exactly you’re speaking to, what they’ve tried, what burned them, why this matters now. Add the non-negotiables you want surfaced - a stat from last quarter, a customer quote, a competitor tactic you’ll challenge. When your model sees that scaffolding, it stops hallucinating and starts arranging evidence. Think of it like prepping a sous-chef: you chop, marinate, and label - then the cooking goes faster, cleaner, better. Lastly, decide your publishing standard before you draft. Will you allow generic intros? No. Will every claim have a source or a story? Yes. Because quality isn’t a fix at the end; it’s a constraint at the start.
 
@@ -40,14 +39,14 @@ Patterns are visible, but you still need a way to ship at speed without losing t
 
 Use this just before you hit publish. Don’t skip steps, especially on pieces targeting India, the US, or global audiences with different expectations.
 
-- **Reader fit:**  Does the first 120 words answer a felt problem, not just restate the keyword?
-- **Evidence:**  Are there two verifiable sources dated 2024-2025 or a first-hand example? Link them.
-- **Specificity:**  Do we name prices, timelines, tools, or outcomes a reader can test?
-- **Rhythm:**  Do we mix short lines with layered ones, avoiding robotic uniformity?
-- **Intent match:**  Does the page meet the promise of the query and propose a next step?
-- **Structure:**  Are headings descriptive, FAQs concise, and internal links placed where curiosity naturally spikes?
-- **Tone guardrail:**  No hype words without proof. No fear-mongering. Clarity over clever.
-- **Compliance:**  If medical/financial/legal, is expert review noted? If not, cut the claim.
+- Reader fit - Does the first 120 words answer a felt problem, not just restate the keyword?
+- Evidence - Are there two verifiable sources dated 2024-2025 or a first-hand example? Link them.
+- Specificity - Do we name prices, timelines, tools, or outcomes a reader can test?
+- Rhythm - Do we mix short lines with layered ones, avoiding robotic uniformity?
+- Intent match - Does the page meet the promise of the query and propose a next step?
+- Structure - Are headings descriptive, FAQs concise, and internal links placed where curiosity naturally spikes?
+- Tone guardrail - No hype words without proof. No fear-mongering. Clarity over clever.
+- Compliance - If medical/financial/legal, is expert review noted? If not, cut the claim.
 
 A checklist handles minimums. But quality also depends on how you decide - in the moment - what goes in and what stays out.
 
