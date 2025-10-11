@@ -4,9 +4,14 @@
 
 
 <meta name="theme-color" content="#000000" />
-<meta name="description"
-  content="{{ .Params.description }}" />
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 
+<!-- Keywords for SEO -->
+{{ with .Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}" />
+{{ else if .Site.Params.keywords }}
+<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}" />
+{{ end }}
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Serplux" />
@@ -42,7 +47,35 @@
       "https://www.linkedin.com/company/serplux/"
     ]
   }
+</script> 
+{{ else }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage }}{{ end }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ with .Site.Params.author }}{{ . }}{{ else }}Serplux Team{{ end }}{{ end }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Serplux",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://serplux.com/frontend/images/logo.png"
+    }
+  },
+}
 </script>
-
 
 {{ end }}
