@@ -40,7 +40,7 @@
           <div class="card-new rounded shadow padding flex flex-col">
             <a href="{{.Permalink}}" aria-label="Read more about {{ .Title }}">
               <div class="image">
-                <img src='{{ .Permalink | relLangURL  }}{{.Params.coverimage}}' loading="lazy" alt="{{.Title}}" />
+                {{ partial "responsive-image.html" (dict "src" .Params.coverimage "alt" .Title "Page" .) }}
               </div>
             </a>
             <div class="description">
