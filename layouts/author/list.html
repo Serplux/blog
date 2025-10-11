@@ -29,7 +29,23 @@
         <div class="author-page">
           <div class="author">
             <div class="author-image">
-              <img src="{{ .Params.photo }}" alt="{{ .Params.name }}" class="circle extra-large" />
+              {{ $img := .Resources.GetMatch .Params.photo }}
+              {{ if $img }}
+                {{ $small := $img.Resize "320x" }}
+                {{ $medium := $img.Resize "600x" }}
+                {{ $large := $img.Resize "900x" }}
+                <img
+                  src="{{ $medium.RelPermalink }}"
+                  srcset="{{ $small.RelPermalink }} 320w, {{ $medium.RelPermalink }} 600w, {{ $large.RelPermalink }} 900w"
+                  sizes="(max-width: 600px) 320px, (max-width: 1200px) 600px, 900px"
+                  alt="{{ .Params.name }}"
+                  class="circle extra-large"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              {{ else }}
+                <img src="{{ .Params.photo }}" alt="{{ .Params.name }}" class="circle extra-large" />
+              {{ end }}
             </div>
             <div class="about-author">
               <h1>{{ .Params.name }}</h1>
@@ -109,8 +125,8 @@
           <div class="card-new rounded shadow padding flex flex-col">
             <a href="{{.Permalink}}">
               <div class="image">
-                <img src='{{ $coverImage.Permalink }}' loading="lazy" alt="{{.Title}}" />
-              </div>
+                {{ partial "responsive-image.html" (dict "src" .Params.coverimage "alt" .Title "Page" .) }}
+              </div>              
             </a>
             <div class="description">
               <div>
