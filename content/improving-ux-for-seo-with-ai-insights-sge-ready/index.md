@@ -1,8 +1,8 @@
 ---
 title: "Improving UX for SEO with AI Insights | SGE‑Ready Playbook by Serplux"
-date: 2025-10-14T01:33:58+05:30
-coverImage: "cover.webp"
-author: "Anushka Kumari"
+date: 2025-10-15T01:33:58+05:30
+coverImage: "improving-ux-for-seo-with-ai-insights-sge-ready.webp"
+author: "Priya Kashyap"
 tags: ["Article", " UX", "SEO"]
 description: "Make pages faster, clearer, and SGE‑ready. This practical guide shows how AI insights, SERP analysis, rank tracking, schema markup, and Core Web Vitals improvements lift UX and organic performance"
 ---
