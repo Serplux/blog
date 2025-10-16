@@ -2,7 +2,6 @@
 <link rel="icon" href="/favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
 <meta name="theme-color" content="#000000" />
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 
@@ -17,37 +16,34 @@
 <meta property="og:site_name" content="Serplux" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Params.title }} | Serplux" />
-<meta property="og:description"
-  content="{{ .Params.description }}" />
+<meta property="og:description" content="{{ .Params.description }}" />
 <meta property="og:image" content="https://serplux.com/frontend/images/hero-og.png" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@SerpluxAI" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
 <meta name="twitter:title" content="{{ .Params.title }} | Serplux" />
-<meta name="twitter:description"
-  content="{{ .Params.description }}" />
+<meta name="twitter:description" content="{{ .Params.description }}" />
 <meta name="twitter:image" content="https://serplux.com/frontend/images/hero-og.png" />
 
 <title>{{ .Params.title }} | Serplux</title>
 <link rel="canonical" href="{{ .Permalink }}" />
 
-
 {{ if .IsHome }}
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "World's #1 AI Agents for Instant Marketing Solutions | Serplux",
-    "url": "https://serplux.com/",
-    "description": "",
-    "logo": "https://serplux.com/frontend/images/logo.png",
-    "sameAs": [
-      "https://x.com/SerpluxAI",
-      "https://www.linkedin.com/company/serplux/"
-    ]
-  }
-</script> 
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "World's #1 AI Agents for Instant Marketing Solutions | Serplux",
+  "url": "https://serplux.com/",
+  "description": "",
+  "logo": "https://serplux.com/frontend/images/logo.png",
+  "sameAs": [
+    "https://x.com/SerpluxAI",
+    "https://www.linkedin.com/company/serplux/"
+  ]
+}
+</script>
 {{ else }}
 <script type="application/ld+json">
 {
@@ -74,8 +70,7 @@
       "@type": "ImageObject",
       "url": "https://serplux.com/frontend/images/logo.png"
     }
-  },
+  }
 }
 </script>
-
 {{ end }}

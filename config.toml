@@ -12,7 +12,6 @@ pagination.pagerSize = 9
 [taxonomies]
   author = "author"
   tag = "tags"
-  
 
 [sitemap]
   changefreq = 'weekly'
@@ -22,9 +21,9 @@ pagination.pagerSize = 9
 [outputs]
   page = ["HTML"]
   home = ["HTML", "RSS"]
-  section = ["HTML","RSS"]
+  section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-
+  pageHeaders = { "Cache-Control" = "public, max-age=86400", "X-Content-Type-Options" = "nosniff" }
 
 [params]
   linkedin = "https://www.linkedin.com/company/serplux/"
@@ -65,7 +64,3 @@ pagination.pagerSize = 9
 
 # Enable automatic generation of robots.txt for search engines
 enableRobotsTXT = true
-
-# Added caching and security headers for SEO trust (if supported)
-[outputs]
-  pageHeaders = { "Cache-Control" = "public, max-age=86400", "X-Content-Type-Options" = "nosniff" }
