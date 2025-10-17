@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Content for AI-Driven Search | Serplux"
+title: "Optimizing Content for AI-Driven Search"
 date: 2025-10-17T01:33:58+05:30
 coverImage: "cover.webp"
 author: "Anushka Kumari"
