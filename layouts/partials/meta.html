@@ -5,7 +5,6 @@
 <meta name="theme-color" content="#000000" />
 <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
 
-<!-- Keywords for SEO -->
 {{ with .Params.keywords }}
 <meta name="keywords" content="{{ delimit . ", " }}" />
 {{ else if .Site.Params.keywords }}
@@ -15,18 +14,18 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Serplux" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:title" content="{{ .Params.title }} | Serplux" />
-<meta property="og:description" content="{{ .Params.description }}" />
-<meta property="og:image" content="https://serplux.com/frontend/images/hero-og.png" />
+<meta property="og:title" content="{{ .Title }} | Serplux" />
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage }}{{ end }}" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@SerpluxAI" />
+<meta name="twitter:site" content="{{ .Site.Params.twitter }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
-<meta name="twitter:title" content="{{ .Params.title }} | Serplux" />
-<meta name="twitter:description" content="{{ .Params.description }}" />
-<meta name="twitter:image" content="https://serplux.com/frontend/images/hero-og.png" />
+<meta name="twitter:title" content="{{ .Title }} | Serplux" />
+<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta name="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage }}{{ end }}" />
 
-<title>{{ .Params.title }} | Serplux</title>
+<title>{{ .Title }} | Serplux</title>
 <link rel="canonical" href="{{ .Permalink }}" />
 
 {{ if .IsHome }}
@@ -36,7 +35,7 @@
   "@type": "Organization",
   "name": "World's #1 AI Agents for Instant Marketing Solutions | Serplux",
   "url": "https://serplux.com/",
-  "description": "",
+  "description": "{{ .Site.Params.description }}",
   "logo": "https://serplux.com/frontend/images/logo.png",
   "sameAs": [
     "https://x.com/SerpluxAI",
@@ -61,7 +60,7 @@
   },
   "author": {
     "@type": "Person",
-    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ with .Site.Params.author }}{{ . }}{{ else }}Serplux Team{{ end }}{{ end }}"
+    "name": "{{ with .Params.author }}{{ . }}{{ else }}{{ with .Site.Params.author }}{{ . }}{{ end }}{{ end }}"
   },
   "publisher": {
     "@type": "Organization",
@@ -70,7 +69,9 @@
       "@type": "ImageObject",
       "url": "https://serplux.com/frontend/images/logo.png"
     }
-  }
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}"
 }
 </script>
 {{ end }}
