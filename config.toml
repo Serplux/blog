@@ -7,7 +7,9 @@ pygmentsClass = true
 pygmentsCodefences = true
 pygmentsStyle = "friendly"
 
-pagerSize = 9
+paginate = 9
+
+pagination.pagerSize = 9
 
 
 [taxonomies]
