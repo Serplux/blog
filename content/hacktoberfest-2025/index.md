@@ -7,7 +7,11 @@ tags: ["Article", "Hacktoberfest 2025", "Open Source"]
 description: "Hacktoberfest 2025 is here! Join the Serplux community this October to contribute to open-source projects, improve your coding skills, and earn unique rewards."
 ---
 
-**Updated on:** 19 September 2025
+lastmod: 2025-09-19T00:00:00+05:30
+
+---
+
+<!-- NOTE: moved update date into frontmatter `lastmod` and removed the in-body "Updated on" line -->
 
 Every October, the global tech community comes together to celebrate Hacktoberfest — a month-long open-source festival that inspires thousands of people to contribute to projects they care about.
 
