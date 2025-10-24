@@ -146,6 +146,42 @@ Here are a few resources to help you get started quickly:
 
 - [Open Source Guide by GitHub](https://opensource.guide/how-to-contribute/)
 
+## Suggested Good First Issues (Serplux blog)
+
+If you'd like to start contributing to the Serplux blog repository, here are a few small, well-scoped tasks you can pick up right away. Each item below includes the file(s) to edit, a short description of the change, and an acceptance checklist — ideal for first PRs.
+
+- Fix accessibility alt text placeholders
+	- Files: `content/best-ai-seo-agents-2025/index.md` (search for `![alt text](image.webp)` and other inline images)
+	- Change: Replace `![alt text](...)` with descriptive alt text (e.g. `![Semrush logo](semrush.webp)`) and ensure each decorative image has an explicit `alt=""` if it adds no semantic value.
+	- Acceptance: No placeholder alt text remains; commit message explains this is an accessibility/SEO fix.
+
+- Remove an empty duplicate partial
+	- Files: `layouts/partials/custom-js.html.new`
+	- Change: Remove or rename this empty `.new` file (for example to `custom-js.html.bak`) and document the cleanup in the PR body.
+	- Acceptance: The repository no longer contains an unintended empty partial; templates continue to include `custom-js.html` as before.
+
+- Fix lazy-load script srcset bug
+	- Files: `layouts/partials/custom-js.html`
+	- Change: When lazy-loading, set `src` from `data-src` and `srcset` from `data-srcset` (fallback to existing values if the data attribute is absent). This prevents broken responsive images.
+	- Acceptance: Script sets `lazyImage.src = lazyImage.dataset.src` and `lazyImage.srcset = lazyImage.dataset.srcset || lazyImage.srcset` when available; add a one-line comment explaining the change.
+
+- Add rel="noopener noreferrer" to external links that open in a new tab
+	- Files: `layouts/partials/header.html`, `layouts/partials/footer.html`, and other partials that include `target="_blank"`
+	- Change: Ensure external links that include `target="_blank"` also include `rel="noopener noreferrer"` for security.
+	- Acceptance: All external links using `_blank` have the rel attribute; no visual regressions.
+
+- Clean up stray formatting artifacts in posts
+	- Files: `content/Dark-Funnel-SEO-Capture-in-2025/index.md` (search for stray `Description:` in the body) and similar posts.
+	- Change: Remove or fix stray text and ensure paragraphs render correctly.
+	- Acceptance: Post reads naturally without formatting artifacts.
+
+- Add or improve frontmatter where missing (when adding a new post)
+	- Files: any `content/<post>/index.md` missing `description` or `coverImage`
+	- Change: Add `description` and an optimized `coverImage` following the `CONTRIBUTING.md` rules.
+	- Acceptance: Frontmatter includes `title`, `date`, `author`, `tags`, `description`, and `coverImage` (optimized image file added to `static/assets` or referenced appropriately).
+
+Tip for contributors: make small, self-contained PRs with a clear description of what changed and why (for content edits include a short note about sources and the value added). That makes reviews fast and increases the likelihood your PR will be merged.
+
 ## Important Dates
 
 Here’s the timeline for Hacktoberfest 2025:
