@@ -2,7 +2,7 @@
 title: "FAQs & JSON-LD for AI/Voice Search"
 date: 2025-10-25T01:33:58+05:30
 coverImage: "faqs-json-ld-ai-voice-search.webp"
-author: "Vaibhav Maheshwari"
+author: "Anushka Kumari"
 tags: ["AI search", "voice search", "FAQ schema", "JSON-LD"]
 description: "Write one-breath answers that assistants can read aloud. Pair concise FAQs with JSON-LD (FAQ/HowTo), stable CWV, and proof to win AI search and voice citations."
 ---
