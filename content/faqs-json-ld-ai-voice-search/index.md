@@ -96,6 +96,7 @@ FAQ Example:
   ]
 }
 ```
+<br />
 
 HowTo Example:
 
@@ -132,8 +133,8 @@ HowTo Example:
     }
   ]
 }
-
 ```
+<br />
 
 Two guardrails: 1) never mark up content that isn’t on the page, and 2) keep numbers in JSON-LD synced with what users see. Assistants punish drift because it creates read-aloud embarrassment. Your goal is to make the text quotable and the labels confirm it.
 
