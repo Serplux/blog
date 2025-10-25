@@ -78,7 +78,7 @@ Avoid forcing a type. If the content doesn’t qualify, skip the label. False po
 
 Templates save time and protect quality. Use them as a starting point, then align every value with visible text. Keep @id anchors stable across deploys so your entity graph stays intact.
 
-FAQ Example:
+**FAQ Example:**
 
 ```json
 {
@@ -96,9 +96,8 @@ FAQ Example:
   ]
 }
 ```
-<br />
 
-HowTo Example:
+**HowTo Example:**
 
 ```json
 {
@@ -134,9 +133,13 @@ HowTo Example:
   ]
 }
 ```
-<br />
 
-Two guardrails: 1) never mark up content that isn’t on the page, and 2) keep numbers in JSON-LD synced with what users see. Assistants punish drift because it creates read-aloud embarrassment. Your goal is to make the text quotable and the labels confirm it.
+
+
+**Two guardrails:**
+
+1) never mark up content that isn’t on the page, and 
+2) keep numbers in JSON-LD synced with what users see. Assistants punish drift because it creates read-aloud embarrassment. Your goal is to make the text quotable and the labels confirm it.
 
 ## Measuring What Matters - Proving The Lift Without Guesswork
 
