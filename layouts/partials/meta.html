@@ -4,7 +4,7 @@
 
 <meta name="theme-color" content="#000000" />
 
-<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description | default \"Default site description\" }}{{ end }}" />
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Default site description" }}{{ end }}" />
 
 {{ with .Params.keywords }}
 <meta name="keywords" content="{{ delimit . ", " }}" />
@@ -15,18 +15,18 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Serplux" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default \"Serplux\" }}{{ end }} | Serplux" />
-<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description | default \"Default site description\" }}{{ end }}" />
-<meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage | default \"https://serplux.com/frontend/images/hero-og.png\" }}{{ end }}" />
+<meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default "Serplux" }}{{ end }} | Serplux" />
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Default site description" }}{{ end }}" />
+<meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage | default "https://serplux.com/frontend/images/hero-og.png" }}{{ end }}" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="{{ .Site.Params.twitter | default \"@SerpluxAI\" }}" />
+<meta name="twitter:site" content="{{ .Site.Params.twitter | default "@SerpluxAI" }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
-<meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default \"Serplux\" }}{{ end }} | Serplux" />
-<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description | default \"Default site description\" }}{{ end }}" />
-<meta name="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage | default \"https://serplux.com/frontend/images/hero-og.png\" }}{{ end }}" />
+<meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default "Serplux" }}{{ end }} | Serplux" />
+<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Default site description" }}{{ end }}" />
+<meta name="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage | default "https://serplux.com/frontend/images/hero-og.png" }}{{ end }}" />
 
-<title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default \"Serplux\" }}{{ end }} | Serplux</title>
+<title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default "Serplux" }}{{ end }} | Serplux</title>
 <link rel="canonical" href="{{ .Permalink }}" />
 
 {{ with .IsHome }}
@@ -36,7 +36,7 @@
   "@type": "Organization",
   "name": "World's #1 AI Agents for Instant Marketing Solutions | Serplux",
   "url": "https://serplux.com/",
-  "description": "{{ .Site.Params.description | default \"Default site description\" }}",
+  "description": "{{ .Site.Params.description | default "Default site description" }}",
   "logo": "https://serplux.com/frontend/images/logo.png",
   "sameAs": [
     "https://x.com/SerpluxAI",
@@ -53,11 +53,11 @@
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"
   },
-  "headline": "{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default \"Serplux\" }}{{ end }}",
-  "description": "{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | default \"Default summary\" }}{{ end }}",
+  "headline": "{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title | default "Serplux" }}{{ end }}",
+  "description": "{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | default "Default summary" }}{{ end }}",
   "image": {
     "@type": "ImageObject",
-    "url": "{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage | default \"https://serplux.com/frontend/images/hero-og.png\" }}{{ end }}"
+    "url": "{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.ogimage | default "https://serplux.com/frontend/images/hero-og.png" }}{{ end }}"
   },
   "author": {
     "@type": "Person",
@@ -71,8 +71,8 @@
       "url": "https://serplux.com/frontend/images/logo.png"
     }
   },
-  "datePublished": "{{ .Date.Format \"2006-01-02T15:04:05Z07:00\" }}",
-  "dateModified": "{{ .Lastmod.Format \"2006-01-02T15:04:05Z07:00\" }}"
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}"
 }
 </script>
 {{ end }}
