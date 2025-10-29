@@ -15,7 +15,6 @@ pagination.pagerSize = 9
 [taxonomies]
   author = "author"
   tag = "tags"
-  
 
 [sitemap]
   changefreq = 'weekly'
@@ -25,9 +24,9 @@ pagination.pagerSize = 9
 [outputs]
   page = ["HTML"]
   home = ["HTML", "RSS"]
-  section = ["HTML","RSS"]
+  section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-
+  pageHeaders = { "Cache-Control" = "public, max-age=86400", "X-Content-Type-Options" = "nosniff" }
 
 [params]
   linkedin = "https://www.linkedin.com/company/serplux/"
@@ -38,6 +37,10 @@ pagination.pagerSize = 9
   description = "Discover Serplux, the world's #1 AI-powered marketing assistant. Instantly tackle any marketing task without the need for endless searches, blogs, or prompts. Let our AI agents handle everything in seconds—efficient, fast, and beyond ChatGPT."
   twitter = "@SerpluxAI"
 
+  # Added SEO keywords and canonical base URL
+  keywords = ["AI marketing", "SEO automation", "content marketing 2025", "AI SEO tools"]
+  canonicalBaseURL = "https://blog.serplux.com/"
+
   [markup.goldmark.renderer]
   unsafe = true
 
@@ -47,8 +50,20 @@ pagination.pagerSize = 9
     ordered = false
     startLevel = 2
 
+  # Added markup highlight and parser settings for SEO friendly HTML
+  [markup.highlight]
+    noClasses = false
+
+  [markup.goldmark.parser]
+    autoHeadingIDType = "github"
+
 [params.shareButtons]
   size = "small"
   networks = ["facebook", "twitter"]
 
+# Added RSS feed description for better syndication SEO
+[params.rss]
+  description = "Latest blog posts on AI-powered marketing strategies, SEO automation, and digital marketing trends from Serplux."
+
+# Enable automatic generation of robots.txt for search engines
 enableRobotsTXT = true
